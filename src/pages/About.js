@@ -1,12 +1,12 @@
 import Header from "../components/Header";
 
-function NotFound() {
+function About() {
     return (
       <div className="About">
     <Header />
-    <h1>page NotFound</h1>
+    <h1>page About</h1>
   </div>
     );
   }
   
-  export default NotFound;
+  export default About;

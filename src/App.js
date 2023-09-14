@@ -5,17 +5,35 @@ import "./css/app.css";
 
 import Home from "./pages/Home";
 import Accomodation from "./pages/Accomodation";
-import AboutUs from "./pages/AboutUs";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+// import Header from "./components/Header";
 
 function App() {
   return (
-        <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Accomodation" element={<Accomodation />} />
-      <Route path="/AboutUs" element={<AboutUs />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Accomodation" element={<Accomodation />} />
+        <Route path="/About" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+
+    /*    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>*/
   );
 }
 
