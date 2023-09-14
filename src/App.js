@@ -1,9 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+
+//import logo from './logo.svg';
+import "./App.css";
+
+import Home from "./pages/Home";
+import Accomodation from "./pages/Accomodation";
+import AboutUs from "./pages/AboutUs";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <div className="App">
+    /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +25,14 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div> */
+
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/Accomodation" element={<Accomodation />} />
+      <Route path="/AboutUs" element={<AboutUs />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
