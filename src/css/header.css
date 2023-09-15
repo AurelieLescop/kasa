@@ -1,6 +1,6 @@
  header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center; 
     /* width : 100%; */
   }
@@ -13,6 +13,8 @@
     margin: 0;
     padding : 10px;
 } */
+
+ /* li et ul ont 1 padding qui fait une marge / un espace à droite */
 
  ul { 
     display: flex;

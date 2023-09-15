@@ -1,7 +1,13 @@
 @import './home.css';
 @import './header.css';
+@import './footer.css';
 
 /* body {
     padding : 20px;
     width: 100%;
 } */
+
+body {
+    size: 12px;
+    /* mettre en rem */
+}

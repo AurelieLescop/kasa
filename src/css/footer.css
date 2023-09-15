@@ -1,0 +1,11 @@
+footer {
+    background-color : black;
+    color: white;
+    text-align: center;
+    padding : 50px;
+}
+
+.logo {
+width: 122px;
+height: 40px;
+}
