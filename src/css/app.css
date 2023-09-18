@@ -8,6 +8,8 @@
 } */
 
 body {
-    size: 12px;
+    font-size: 12px;
     /* mettre en rem */
+    /*border : 1px solid red;
+     essai pour voir limite du body */
 }
