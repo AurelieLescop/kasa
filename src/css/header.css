@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    margin: 10px 0 50px 0;
     /* width : 100%; */
   }
 
@@ -20,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    /* margin: 0; */
+    margin: 0;
     padding : 10px;
  } 
 
@@ -28,9 +29,11 @@ li {
     padding : 10px;
 }
 
-a {
+li a {
     text-decoration: none;
     color: #FF6060;
+    font-size: 12px;
+    font-weight : 500;
 }
 
 .activeLink {
@@ -40,4 +43,5 @@ a {
 .logo {
     width : 145px;
     height : 47 px;
+    padding-left: 20px;
 }

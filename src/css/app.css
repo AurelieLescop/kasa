@@ -1,6 +1,7 @@
 @import './home.css';
 @import './header.css';
 @import './footer.css';
+@import './notfound.css';
 
 /* body {
     padding : 20px;
@@ -9,6 +10,7 @@
 
 body {
     font-size: 12px;
+    font-family: "Montserrat", sans-serif;
     /* mettre en rem */
     /*border : 1px solid red;
      essai pour voir limite du body */
