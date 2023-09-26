@@ -1,6 +1,6 @@
 import logofooter from '../LOGO_footer.png';
 
-function Header() {
+function Footer() {
     return (
 <div>
 <footer>
@@ -12,4 +12,4 @@ function Header() {
     );
   }
   
-  export default Header;
+  export default Footer;
