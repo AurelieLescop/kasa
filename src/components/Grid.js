@@ -2,17 +2,20 @@ import React from "react";
 
 const Grid = ({ data }) => {
   return (
-    <li className="grid">
-      <img
+    // <li className="grid">
+    <div className="grid">
+
+      {/* <img
         src={data.cover}
         alt={"photo " + data.title}
-      />
+      /> */}
       <div className="infos">
         <h2>{data.title}</h2>
         {/* <h4>{country.capital}</h4>
         <p>Pop. {country.population.toLocaleString()}</p> */}
       </div>
-    </li>
+    {/* /* </li> */}
+    </div>
   );
 };
 

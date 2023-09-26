@@ -2,6 +2,9 @@
 @import './header.css';
 @import './footer.css';
 @import './notfound.css';
+@import './grid.css';
+@import './banner.css';
+
 
 /* body {
     padding : 20px;

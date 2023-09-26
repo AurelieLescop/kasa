@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 //import Accomodationgrid from "../components/Accomodationgrid";
 import Grid from "../components/Grid";
 import { useState, useEffect } from "react";
+import Banner from "../components/Banner";
 
 
 function Home() {
@@ -21,13 +22,17 @@ function Home() {
     return (
   <div className="home">
     <Header />
+    <Banner />
+
     <h1>page Accueil</h1>
-    <ul>
+    {/* <ul> */}
+    <div className="list">
         {datas
           .map((data) => (
             <Grid key={data.id} data={data} />
           ))}
-      </ul>
+          </div>
+      {/* </ul> */}
 
 
     <Footer />
