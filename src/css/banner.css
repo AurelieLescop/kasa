@@ -3,6 +3,22 @@
     /* padding : 20px; */
     border: solid 1px red;
     padding: 0 20px 0 20px;
+    /* filter: brightness(0.9); */
+}
+
+.banner h1 {
+    position : absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 0 0 20px;
+    /* margin: auto; */
+    z-index: 10;
+    /* width: 100%; */
+    /* text-align: center; */
+    /* top: 50%; */
+    /* left: 50%; */
+
 }
 
 .banner_img {
@@ -16,6 +32,10 @@
     /* max-width: 1400px; */
     height: 111px;
     object-fit: cover;
+    /* margin: auto; */
     /* z-index: 0; */
+   filter: brightness(0.65);
+    
+
 
 }
