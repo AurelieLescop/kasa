@@ -1,10 +1,9 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 //import Accomodationgrid from "../components/Accomodationgrid";
-import Grid from "../components/Grid";
+import Card from "../components/Card";
 import { useState, useEffect } from "react";
 import Banner from "../components/Banner";
-
 
 function Home() {
   const [datas, setDatas] = useState([]);
@@ -12,32 +11,31 @@ function Home() {
     fetch("logements.json")
       .then((response) => response.json())
       //   .then((datas) => console.log(datas));
-    //   .then((res) => console.log(res));
-    .then((data) => setDatas(data));
+      //   .then((res) => console.log(res));
+      .then((data) => setDatas(data));
     //.catch((error) =>)
 
-
-    // .catch((error)) => console.error(error));
+    // .catch((error)) => console.error(error)); à remettre non ?
   }, []);
-    return (
-  <div className="home">
-    <Header />
-    <Banner />
+  return (
+    <div className="home">
+      <Header />
+      <Banner />
 
-    <h1>page Accueil</h1>
-    {/* <ul> */}
-    <div className="list">
-        {datas
-          .map((data) => (
-            <Grid key={data.id} data={data} />
+      {/* <ul> */}
+      <div className="accomodation_list">
+        {/* <div className="accomodation_card"> */}
+          {datas.map((data) => (
+            <Card key={data.id} data={data} />
           ))}
-          </div>
+
+        {/* </div> */}
+      </div>
       {/* </ul> */}
 
+      <Footer />
+    </div>
+  );
+}
 
-    <Footer />
-  </div>
-    );
-  }
-  
-  export default Home;
+export default Home;

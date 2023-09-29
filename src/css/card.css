@@ -1,0 +1,28 @@
+.accomodation_card {
+height: 255px;
+width: 335px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+border-radius: 20px;
+margin: 20px;
+position: relative;
+z-index: 1;
+}
+
+.accomodation_card h2 {
+color: white;
+font-size: 18px;
+width: 200px;
+margin: 0;
+padding: 0 0 10px 20px;
+position: absolute;
+bottom: 0;
+    }
+
+.accomodation_picture {
+    object-fit: cover;
+    width: 335px;
+    height: 255px;
+    /* position: absolute; */
+    display: block;
+    border-radius: 20px;
+}
