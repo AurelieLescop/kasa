@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({ data }) => {
   return (
     // <li className="grid">
-
+<div>
     <article className="accomodation_card">
       <a
         href="http://localhost:3000/"
@@ -12,11 +12,12 @@ const Card = ({ data }) => {
         <img
           class="accomodation_picture"
           src={data.cover}
-          alt={"Photo" + data.title}
+          alt={"Photo " + data.title}
         />
         <h2>{data.title}</h2>
       </a>
     </article>
+    </div>
 
     /* <img
         src={data.cover}

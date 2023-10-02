@@ -23,13 +23,15 @@ function Home() {
       <Banner />
 
       {/* <ul> */}
-      <div className="accomodation_list">
-        {/* <div className="accomodation_card"> */}
+      <div className="accomodation">
+        <div className="accomodation_list">
+          {/* <div className="accomodation_card"> */}
           {datas.map((data) => (
             <Card key={data.id} data={data} />
           ))}
 
-        {/* </div> */}
+          {/* </div> */}
+        </div>
       </div>
       {/* </ul> */}
 
