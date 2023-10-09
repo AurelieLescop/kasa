@@ -29,11 +29,11 @@ function Collapse(props) {
       {/* {open && (
             <div className="toggle">{props.children}</div> */}
 
-            <div className="scrollingmenu">
+            <div className="menu">
             <h2>{props.label}</h2>
-      <p onClick={display} className="icon">{open? "chevron haut" : "chevron bas"}</p>
+      <p onClick={display} className="menu__scrolling">{open? "chevron haut" : "chevron bas"}</p>
       </div>
-      {open && <div className="toggle">{props.children}</div>}
+      {open && <div className="description">{props.children}</div>}
     </div>
   );
 }
