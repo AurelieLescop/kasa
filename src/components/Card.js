@@ -6,7 +6,7 @@ const Card = ({ data }) => {
 <div>
     <article className="accomodation_card">
       <a
-        href={"http://localhost:3000/" + data.id}
+        href={"http://localhost:3000/Accomodation/" + data.id}
   // a.setAttribute("href", `./product.html?id=${canape._id}`);
 
         title="Plus de détails sur cet hébergement"
