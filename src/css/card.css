@@ -21,10 +21,11 @@ bottom: 0;
 
 .accomodation_picture {
     object-fit: cover;
-    width: 335px;
+    /* width: 335px; */
+    width: 100%;
     height: 255px;
     /* position: absolute; */
-    display: block;
+    display: flex;
     border-radius: 20px;
     /* position: absolute; */
     position: relative;

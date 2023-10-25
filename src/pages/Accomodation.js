@@ -41,29 +41,60 @@ function Accomodation() {
 	// }, [idAccomodation]);
 
 let params = useParams();
-console.log(params.id);
+console.log("params.id", params.id);
 
-const [datas, setDatas] = useState([]);
+//essai 1 fetch
+// const [datas, setDatas] = useState([]);
+// useEffect(() => {
+//   fetch("../logements.json")
+//     .then((response) => response.json())
+//     .then((data) => setDatas(data));
+// }, []);
+//fin essai 1
+
+// essai 2 loading state
+const [datas, setDatas] = useState(null);
+const [isLoading, setIsLoading] = useState(false);
+
 useEffect(() => {
+  setIsLoading(true);
   fetch("../logements.json")
     .then((response) => response.json())
-    //   .then((datas) => console.log(datas));
-    //   .then((res) => console.log(res));
-    .then((data) => setDatas(data));
-  //.catch((error) =>)
-
-  // .catch((error)) => console.error(error)); à remettre non ?
+    .then((data) => {
+console.log(data)
+      setDatas (data.filter((accomodation) => accomodation.id === params.id)[0])
+      setIsLoading(false);
+    });
 }, []);
-console.log(datas);
-// const dataCurrentAccomodation = datas.filter(datas => datas.id === params.id);
-const dataCurrentAccomodation = datas.filter((data) => data.id === params.id);
-console.log(datas.id)
-console.log(dataCurrentAccomodation);
+//fin essai 2
+
+//essai 3 async / await 
+// const [datas, setDatas] = useState([]);
+// useEffect(() => {
+//   (async () => {
+//       const data = await fetch("../logements.json")
+//           .then(res => res.json())
+
+//       setDatas(data)
+//   })()
+// }, [])
+//fin essai 3
+
+// // const dataCurrentAccomodation = datas.filter(datas => datas.id === params.id);
+
+// console.log(datas.id)
 // const getFlat = datas.find((appartment) => {
 //   return appartment.id === id;
 // });
-console.log(dataCurrentAccomodation[0].id);
-console.log(dataCurrentAccomodation[0].title)
+// console.log(dataCurrentAccomodation[0].id);
+// console.log(dataCurrentAccomodation[0].title)
+
+// console.log(dataCurrentAccomodation[0]["title"]);
+// console.log("dataCurrentAccomodation[0].title", dataCurrentAccomodation[0].title);
+
+
+
+
 
 
     return (
@@ -71,12 +102,16 @@ console.log(dataCurrentAccomodation[0].title)
     <Header />
     <h1>page Accomodation</h1>
 
-    {/* {accomodation.filter} */}
-    {/* <p>{dataCurrentAccomodation.title}</p> */}
-    {/* <h2>{dataCurrentAccomodation[0].title}</h2> */}
-    {/* {logements.filter((logement) => (
-      <img key={logement.id} src={logement.pictures} alt ="logement" />
-    ))} */}
+    <div>
+      {isLoading && <p>Loading...</p>}
+      {datas && (
+        <h2>
+{datas.title}
+        </h2>
+      )}
+   </div>
+
+   
     <Footer />
   </div>
     );
