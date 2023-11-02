@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 import Imageslider from "../components/Imageslider";
-
+import Collapse from "../components/Collapse";
 
 function Accomodation() {
   let params = useParams();
@@ -27,16 +27,30 @@ function Accomodation() {
   }, [params.id]);
 
   console.log(datas);
+
   return (
     <div>
       <Header />
 
+      {datas && <Imageslider slides={datas.pictures} />}
+
       <div>
         {isLoading && <p>Loading...</p>}
-        {datas && <h2>{datas.title}</h2>}
-      </div>
 
-      {datas && <Imageslider slides={datas.pictures} />}
+        {datas && <h2>{datas.title}</h2>}
+        {datas && <p>{datas.location}</p>}
+        {datas && <div className="tag">{datas.tags}</div>}
+        {datas && (
+          <Collapse label="Description">
+            <p>{datas.description}</p>
+          </Collapse>
+        )}
+        {datas && (
+          <Collapse label="Équipements">
+            <p>{datas.equipments}</p>
+          </Collapse>
+        )}
+      </div>
 
       <Footer />
     </div>
