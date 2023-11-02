@@ -28,33 +28,44 @@ function Accomodation() {
 
   console.log(datas);
 
-  return (
-    <div>
-      <Header />
+  // if datas... return
+  // else
+  // success / loading / failure if else else
 
-      {datas && <Imageslider slides={datas.pictures} />}
+  if (datas) {
+    const equipments = (
+      <ul>
+        {datas.equipments.map((equipment) => (
+          <li>{equipment}</li>
+        ))}
+      </ul>
+    );
 
+    return (
       <div>
-        {isLoading && <p>Loading...</p>}
+        <Header />
 
-        {datas && <h2>{datas.title}</h2>}
-        {datas && <p>{datas.location}</p>}
-        {datas && <div className="tag">{datas.tags}</div>}
-        {datas && (
-          <Collapse label="Description">
-            <p>{datas.description}</p>
-          </Collapse>
-        )}
-        {datas && (
-          <Collapse label="Équipements">
-            <p>{datas.equipments}</p>
-          </Collapse>
-        )}
+        {datas && <Imageslider slides={datas.pictures} />}
+
+        <div>
+          {isLoading && <p>Loading...</p>}
+
+          {datas && <h2>{datas.title}</h2>}
+          {datas && <p>{datas.location}</p>}
+          {datas && <div className="tag">{datas.tags}</div>}
+          {datas && (
+            <Collapse label="Description">
+              <p>{datas.description}</p>
+            </Collapse>
+          )}
+          {datas && <Collapse label="Équipements"><p>{equipments}</p></Collapse>}
+        </div>
+
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
-  );
+    );
+  } else {
+    return <div></div>;
+  }
 }
-
 export default Accomodation;

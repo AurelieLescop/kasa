@@ -22,7 +22,7 @@ const Imageslider = ({ slides }) => {
     <div className="sliderpicture">
       <div className="goToPrevious" onClick={goToPrevious}>❰</div>
       <div className="goToNext" onClick={goToNext}>❱</div>
-      <img src={pictures[currentIndex]} alt="appartement" />
+      <img src={pictures[currentIndex]} alt="appartement"  />
     </div>
   );
 };
