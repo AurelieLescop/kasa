@@ -1,0 +1,25 @@
+.sliderpicture {
+  width: 335px;
+  height: 255px;
+  margin: auto;
+}
+
+.sliderpicture img {
+  object-fit: cover;
+  width: 335px;
+  height: 255px;
+}
+
+.goToPrevious {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  color: white;
+}
+
+.goToNext {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  color: white;
+}

@@ -12,9 +12,9 @@
     /* padding: 20px 20px 20px 20px; */
 }
 
-body {
-    /* width: 100%; */
-}
+/* body {
+    /* width: 100%; 
+} */
 
 @media all and (min-width: 690px) {
     .accomodation_list {

@@ -7,7 +7,6 @@ const Imageslider = ({ slides }) => {
   console.log(slides);
   console.log(pictures);
 
-
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -20,11 +19,11 @@ const Imageslider = ({ slides }) => {
   };
 
   return (
-        <div>
-          <div onClick={goToPrevious}>❰</div>
-          <div onClick={goToNext}>❱</div>
-          <img src={pictures[currentIndex]} alt="appartement"/>
-        </div>
+    <div className="sliderpicture">
+      <div className="goToPrevious" onClick={goToPrevious}>❰</div>
+      <div className="goToNext" onClick={goToNext}>❱</div>
+      <img src={pictures[currentIndex]} alt="appartement" />
+    </div>
   );
 };
 

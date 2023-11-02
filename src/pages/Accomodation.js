@@ -1,43 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
-// import datas from '../public/logements.json';
+
 import { useEffect, useState } from "react";
 import Imageslider from "../components/Imageslider";
 
-// function getIdFromUrl() {
-//   const currentUrl = window.location.href;
-//   const url = new URL(currentUrl);
-//   return url.searchParams.get("id");
-// }
 
 function Accomodation() {
-  // à conserver
-  // const accomodationFromUrl = useParams();
-  // console.log(accomodationFromUrl.id);
-  // console.log(accomodationFromUrl);
-
-  // const [datas, setDatas] = useState([]);
-  // useEffect(() => {
-  //   fetch("logements.json")
-  //     .then((response) => response.json())
-  //     .then((data) => setDatas(data));
-  // // console.log(data);
-  //   }, []);
-
-  // useEffect(() => {
-  // 	const dataCurrentAccomodation = datas.filter(data => data.id === idAccomodation);
-  // }, [idAccomodation]);
-
-  // getIdFromUrl()
-
-  // const idAccomodation = useParams('id').id;
-  // const dataCurrentAccomodation = datas.filter(data => data.id === idAccomodation);
-
-  // useEffect(() => {
-  // 	const dataCurrentAccomodation = datas.filter(data => data.id === idAccomodation);
-  // }, [idAccomodation]);
-
   let params = useParams();
   console.log("params.id", params.id);
 
