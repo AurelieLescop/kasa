@@ -20,6 +20,17 @@
 
 }
 
+.description div {
+    font-size: 12px;
+    color: #FF6060;
+    margin: 0;
+    background-color: #F6F6F6;
+    padding : 10px;
+    /* position: absolute; */
+
+}
+
+
 
 
 .menu {

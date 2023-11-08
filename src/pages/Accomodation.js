@@ -41,6 +41,14 @@ function Accomodation() {
       </ul>
     );
 
+    const datastags = (
+      <div className="alltags">
+      {datas.tags.map((tag) => (
+        <div className="tag">{tag}</div>
+      ))}
+    </div>
+  );
+
     return (
       <div>
         <Header />
@@ -51,14 +59,14 @@ function Accomodation() {
           {isLoading && <p>Loading...</p>}
 
           {datas && <h2>{datas.title}</h2>}
-          {datas && <p>{datas.location}</p>}
-          {datas && <div className="tag">{datas.tags}</div>}
+          {datas && <div>{datas.location}</div>}
+          {datas && <div>{datastags}</div>}
           {datas && (
-            <Collapse label="Description">
+            <Collapse label="Description" className="descriptiontag">
               <p>{datas.description}</p>
             </Collapse>
           )}
-          {datas && <Collapse label="Équipements"><p>{equipments}</p></Collapse>}
+          {datas && <Collapse label="Équipements"><div className="equipment">{equipments}</div></Collapse>}
         </div>
 
         <Footer />

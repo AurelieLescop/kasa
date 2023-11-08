@@ -1,3 +1,28 @@
 .tag {
     background-color : #FF6060;
+    color: white;
+    height: 18px;
+    max-width : 90%;
+    margin: 10px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
 }
+
+.alltags {
+    display: flex;
+    /* justify-content: space-between ; */
+}
+/* .descriptiontag li {
+    display: flex;
+    flex-direction: column;
+} */
+
+.equipment ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment li {
+    padding: 0;
+}
+
