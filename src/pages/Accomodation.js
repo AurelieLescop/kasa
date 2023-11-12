@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Imageslider from "../components/Imageslider";
 import Collapse from "../components/Collapse";
+import Ratingbar from "../components/Ratingbar";
 
 function Accomodation() {
   let params = useParams();
@@ -43,11 +44,11 @@ function Accomodation() {
 
     const datastags = (
       <div className="alltags">
-      {datas.tags.map((tag) => (
-        <div className="tag">{tag}</div>
-      ))}
-    </div>
-  );
+        {datas.tags.map((tag) => (
+          <div className="tag">{tag}</div>
+        ))}
+      </div>
+    );
 
     return (
       <div>
@@ -61,12 +62,19 @@ function Accomodation() {
           {datas && <h2>{datas.title}</h2>}
           {datas && <div>{datas.location}</div>}
           {datas && <div>{datastags}</div>}
+          {datas && <div>{datas.rating}</div>}
+          {datas && <Ratingbar rating={datas.rating} />}
+
           {datas && (
             <Collapse label="Description" className="descriptiontag">
               <p>{datas.description}</p>
             </Collapse>
           )}
-          {datas && <Collapse label="Équipements"><div className="equipment">{equipments}</div></Collapse>}
+          {datas && (
+            <Collapse label="Équipements">
+              <div className="equipment">{equipments}</div>
+            </Collapse>
+          )}
         </div>
 
         <Footer />
