@@ -5,7 +5,9 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Imageslider from "../components/Imageslider";
 import Collapse from "../components/Collapse";
-// import Ratingbar from "../components/Ratingbar";
+import Ratingbar from "../components/Ratingbar";
+
+import NotFound from "./NotFound";
 
 function Accomodation() {
   let params = useParams();
@@ -33,7 +35,9 @@ function Accomodation() {
   // else
   // success / loading / failure if else else
 
-  if (datas) {
+  if (isLoading) {
+    return <p>Loading...</p>;
+  } else if (datas) {
     const equipments = (
       <ul>
         {datas.equipments.map((equipment) => (
@@ -41,7 +45,6 @@ function Accomodation() {
         ))}
       </ul>
     );
-
     const datastags = (
       <div className="alltags">
         {datas.tags.map((tag) => (
@@ -54,46 +57,39 @@ function Accomodation() {
       <div>
         <Header />
 
-        {datas && <Imageslider slides={datas.pictures} />}
+        <Imageslider slides={datas.pictures} />
 
         <div>
-          {isLoading && <p>Loading...</p>}
+          <h2>{datas.title}</h2>
+          <div>{datas.location}</div>
+          <div>{datastags}</div>
 
-          {datas && <h2>{datas.title}</h2>}
-          {datas && <div>{datas.location}</div>}
-          {datas && <div>{datastags}</div>}
-
-          {datas && (
-            <div className="presentation">
-              <div className="ratingbar">ratingbar {datas.rating} </div>
-              <div className="host__presentation">
-                <div className="host__name">{datas.host.name} </div>
-                <img
-                  src={datas.host.picture}
-                  className="host__picture"
-                  alt="photographie de l'hôte"
-                />
-              </div>
+          <div className="presentation">
+            <div className="ratingbar"><Ratingbar rating={datas.rating} /> {datas.rating} </div>
+            <div className="host__presentation">
+              <div className="host__name">{datas.host.name} </div>
+              <img
+                src={datas.host.picture}
+                className="host__picture"
+                alt="photographie de l'hôte"
+              />
             </div>
-          )}
+          </div>
 
-          {datas && (
-            <Collapse label="Description" className="descriptiontag">
-              <p>{datas.description}</p>
-            </Collapse>
-          )}
-          {datas && (
-            <Collapse label="Équipements">
-              <div className="equipment">{equipments}</div>
-            </Collapse>
-          )}
+          <Collapse label="Description" className="descriptiontag">
+            <p>{datas.description}</p>
+          </Collapse>
+
+          <Collapse label="Équipements">
+            <div className="equipment">{equipments}</div>
+          </Collapse>
         </div>
 
         <Footer />
       </div>
     );
   } else {
-    return <div></div>;
+    return <NotFound />;
   }
 }
 export default Accomodation;

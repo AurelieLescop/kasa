@@ -7,23 +7,23 @@ const Ratingbar = ({ rating }) => {
   console.log(rating);
 
   let star = [];
-  for (let i = 0; (i = maximumRating); i++) {
-    if (i <= currentRating) {
+  for (let i = 0; i < maximumRating; i++) {
+    if (i < currentRating) {
       star.push(
-        <div>
+        
           <i className="fa-solid fa-star"></i>
-        </div>
+  
       );
     } else {
       star.push(
-        <div>
+        
           <i class="fa-regular fa-star"></i>
-        </div>
+       
       );
     }
   }
 
-  return star;
+  return <div>{star}</div>;
 };
 
 export default Ratingbar;

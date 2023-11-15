@@ -21,10 +21,11 @@ const Imageslider = ({ slides }) => {
   if (slides.length!==1) {
     return (
       <div className="sliderpicture">
-        <div className="goToPrevious" onClick={goToPrevious}>❰</div>
+        {slides.length!==1 && <div className="goToPrevious" onClick={goToPrevious}>❰</div>}
         <div className="goToNext" onClick={goToNext}>❱</div>
-        <img src={pictures[currentIndex]} alt="appartement"  />
+        
         <div className="picturenumber">{currentIndex + 1}/{slides.length}</div>
+        <img src={pictures[currentIndex]} alt="appartement"  />
       </div>
     ); 
   }
