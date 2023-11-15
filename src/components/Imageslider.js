@@ -18,13 +18,23 @@ const Imageslider = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
-  return (
+  if (slides.length!==1) {
+    return (
+      <div className="sliderpicture">
+        <div className="goToPrevious" onClick={goToPrevious}>❰</div>
+        <div className="goToNext" onClick={goToNext}>❱</div>
+        <img src={pictures[currentIndex]} alt="appartement"  />
+        <div className="picturenumber">{currentIndex + 1}/{slides.length}</div>
+      </div>
+    ); 
+  }
+  else {
+    return (
     <div className="sliderpicture">
-      <div className="goToPrevious" onClick={goToPrevious}>❰</div>
-      <div className="goToNext" onClick={goToNext}>❱</div>
       <img src={pictures[currentIndex]} alt="appartement"  />
+      <div className="picturenumber">{currentIndex + 1}/{slides.length}</div>
     </div>
-  );
+  )};
 };
 
 export default Imageslider;
