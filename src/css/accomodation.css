@@ -26,3 +26,20 @@
     padding: 0;
 }
 
+.presentation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.host__presentation {
+    display: flex;
+}
+
+.host__name {
+    width: 93px;
+}
+
+.host__picture {
+    width: 32px;
+    clip-path:ellipse(50% 50%);
+}

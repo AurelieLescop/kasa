@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Imageslider from "../components/Imageslider";
 import Collapse from "../components/Collapse";
-import Ratingbar from "../components/Ratingbar";
+// import Ratingbar from "../components/Ratingbar";
 
 function Accomodation() {
   let params = useParams();
@@ -62,8 +62,20 @@ function Accomodation() {
           {datas && <h2>{datas.title}</h2>}
           {datas && <div>{datas.location}</div>}
           {datas && <div>{datastags}</div>}
-          {datas && <div>{datas.rating}</div>}
-          {datas && <Ratingbar rating={datas.rating} />}
+
+          {datas && (
+            <div className="presentation">
+              <div className="ratingbar">ratingbar {datas.rating} </div>
+              <div className="host__presentation">
+                <div className="host__name">{datas.host.name} </div>
+                <img
+                  src={datas.host.picture}
+                  className="host__picture"
+                  alt="photographie de l'hôte"
+                />
+              </div>
+            </div>
+          )}
 
           {datas && (
             <Collapse label="Description" className="descriptiontag">
