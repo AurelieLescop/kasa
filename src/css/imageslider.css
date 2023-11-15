@@ -28,3 +28,12 @@
   color: white;
   font-size: 30px;
 }
+
+
+.picturenumber {
+  position: absolute;
+  right: 45%;
+  top: 80%;
+  color: black;
+  font-size: 30px;
+}
