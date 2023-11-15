@@ -3,23 +3,23 @@ import React from "react";
 const Card = ({ data }) => {
   return (
     // <li className="grid">
-<div>
-    <article className="accomodation_card">
-      <a
-        href={"http://localhost:3000/Accomodation/" + data.id}
-  // a.setAttribute("href", `./product.html?id=${canape._id}`);
 
-        title="Plus de détails sur cet hébergement"
-      >
-        <img
-          className="accomodation_picture"
-          src={data.cover}
-          alt={"Photo " + data.title}
-        />
-        <h2>{data.title}</h2>
-      </a>
-    </article>
-    </div>
+      <article className="accomodation_card">
+        <a
+          href={"http://localhost:3000/Accomodation/" + data.id}
+          // a.setAttribute("href", `./product.html?id=${canape._id}`);
+
+          title="Plus de détails sur cet hébergement"
+        >
+          <img
+            className="accomodation_picture"
+            src={data.cover}
+            alt={"Photo " + data.title}
+          />
+          <h2>{data.title}</h2>
+        </a>
+      </article>
+  
 
     /* <img
         src={data.cover}
