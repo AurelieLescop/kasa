@@ -1,3 +1,28 @@
-@import "./home.scss";
+@import './home.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './notfound.scss';
+@import './card.scss';
+@import './banner.scss';
+@import './about.scss';
+@import './collapse.scss';
+@import './imageslider.scss';
+@import './accomodation.scss';
 
 
+/* body {
+    padding : 20px;
+    width: 100%;
+} */
+
+body {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    width: 100%;
+    color: #FF6060;
+
+    /* mettre en rem */
+    /*border : 1px solid red;
+     essai pour voir limite du body */
+}
