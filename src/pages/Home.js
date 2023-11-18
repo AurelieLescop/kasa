@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import Card from "../components/Card";
 import { useState, useEffect } from "react";
 import Banner from "../components/Banner";
+// import "../css/home.scss";
+
 
 function Home() {
   const [datas, setDatas] = useState([]);

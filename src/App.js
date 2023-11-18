@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 
 //import logo from './logo.svg'; => penser à supprimer ce logo dans dossier
-import "./css/app.css";
+// import "./css/app.css";
+import "./css/app.scss";
 
 import Home from "./pages/Home";
 import Accomodation from "./pages/Accomodation";
