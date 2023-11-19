@@ -5,13 +5,14 @@ const Card = ({ data }) => {
     // <li className="grid">
 
     <article className="accomodation_card">
-      <div className="accomodation_card_gradient"></div>
+
       <a
         href={"http://localhost:3000/Accomodation/" + data.id}
         // a.setAttribute("href", `./product.html?id=${canape._id}`);
 
         title="Plus de détails sur cet hébergement"
       >
+              <div className="accomodation_card_gradient"></div>
         <img
           className="accomodation_picture"
           src={data.cover}

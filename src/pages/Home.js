@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import Banner from "../components/Banner";
 // import "../css/home.scss";
 
-
 function Home() {
   const [datas, setDatas] = useState([]);
   useEffect(() => {
@@ -22,21 +21,16 @@ function Home() {
   return (
     <div className="home">
       <Header />
-      <Banner />
-
-      {/* <ul> */}
-      <div className="accomodation">
-        <div className="accomodation_list">
-          {/* <div className="accomodation_card"> */}
-          {datas.map((data) => (
-            <Card key={data.id} data={data} />
-          ))}
-
-          {/* </div> */}
+      <main>
+        <Banner />
+        <div className="accomodation">
+          <div className="accomodation_list">
+            {datas.map((data) => (
+              <Card key={data.id} data={data} />
+            ))}
+          </div>
         </div>
-      </div>
-      {/* </ul> */}
-
+      </main>
       <Footer />
     </div>
   );
