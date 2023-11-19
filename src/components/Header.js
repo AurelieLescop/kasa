@@ -13,8 +13,8 @@ function Header() {
 
 <nav>
     <ul>
-        <li><NavLink to="/" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>ACCUEIL</NavLink></li>
-        <li><NavLink to="/About" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>A PROPOS</NavLink></li>
+        <li><NavLink to="/" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>Accueil</NavLink></li>
+        <li><NavLink to="/About" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>A propos</NavLink></li>
     </ul>
 </nav>
 </header>
