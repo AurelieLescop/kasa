@@ -1,6 +1,6 @@
 .collapse {
     /* border: 1px solid blue; */
-    margin : 20px;
+    margin : 20px 0;
     /* background-color: black; */
 }
 
@@ -44,8 +44,12 @@
 // overflow: hidden;
 // transition: max-height 0.2s ease-out;
 
-overflow: hidden;
-transition: height 200ms;
+// overflow: hidden;
+// transition: height 200ms;
+
+// position : relative;
+// top: 1;
+border-radius: -5px;
 
 }
 
@@ -70,4 +74,5 @@ transition: height 200ms;
     justify-content: space-between;
     padding: 0 10px 0 10px;
     /* position: absolute; */
+    // position: relative;
 }
