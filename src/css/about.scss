@@ -13,7 +13,12 @@
     /* z-index: 0; */
    
     // filter: brightness(0.65);
-    
-
 
 }
+
+    @media all and (min-width: 767px) {
+       
+        .about__collapse {
+            margin : 10px 60px;
+        }
+        }

@@ -11,6 +11,7 @@
 @import './ratingbar.scss';
 
 
+
 /* body {
     padding : 20px;
     width: 100%;
@@ -30,4 +31,10 @@ body {
     /* mettre en rem */
     /*border : 1px solid red;
      essai pour voir limite du body */
+}
+
+@media all and (min-width: 767px) {
+    main {
+        padding: 0 40px;
+    }
 }

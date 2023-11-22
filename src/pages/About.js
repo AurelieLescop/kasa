@@ -5,7 +5,7 @@ import picture from "../IMG_about.png";
 
 function About() {
   return (
-    <div className="About">
+    <div className="about">
       <Header />
       <main>
         <img
@@ -14,7 +14,8 @@ function About() {
           alt="photographie de paysage"
         />
 
-        <article>
+        <div className="about__collapse">
+          <article>
           <Collapse label="Fiabilité">
             <p>
               Les annonces postées sur Kasa garantissent une fiabilité totale.
@@ -22,7 +23,8 @@ function About() {
               informations sont régulièrement vérifiées par nos équipes.
             </p>
           </Collapse>
-        </article>
+          </article>
+        
         <article>
           <Collapse label="Respect">
             <p>
@@ -53,6 +55,7 @@ function About() {
             </p>
           </Collapse>
         </article>
+        </div>
       </main>
       <Footer />
     </div>
