@@ -18,24 +18,34 @@ const Imageslider = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
-  if (slides.length!==1) {
+  if (slides.length !== 1) {
     return (
       <div className="sliderpicture">
-        {slides.length!==1 && <div className="goToPrevious" onClick={goToPrevious}>❰</div>}
-        <div className="goToNext" onClick={goToNext}>❱</div>
-        
-        <div className="picturenumber">{currentIndex + 1}/{slides.length}</div>
-        <img src={pictures[currentIndex]} alt="appartement"  />
+        {slides.length !== 1 && (
+          <div className="goToPrevious" onClick={goToPrevious}>
+            <i class="fa-solid fa-chevron-up fa-rotate-270"></i>
+          </div>
+        )}
+        <div className="goToNext" onClick={goToNext}>
+          <i class="fa-solid fa-chevron-up fa-rotate-90"></i>
+        </div>
+
+        <div className="picturenumber">
+          {currentIndex + 1}/{slides.length}
+        </div>
+        <img src={pictures[currentIndex]} alt="appartement" />
       </div>
-    ); 
-  }
-  else {
+    );
+  } else {
     return (
-    <div className="sliderpicture">
-      <img src={pictures[currentIndex]} alt="appartement"  />
-      <div className="picturenumber">{currentIndex + 1}/{slides.length}</div>
-    </div>
-  )};
+      <div className="sliderpicture">
+        <img src={pictures[currentIndex]} alt="appartement" />
+        <div className="picturenumber">
+          {currentIndex + 1}/{slides.length}
+        </div>
+      </div>
+    );
+  }
 };
 
 export default Imageslider;

@@ -19,7 +19,7 @@ header {
 
 /* li et ul ont 1 padding qui fait une marge / un espace à droite */
 
-ul {
+nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -27,7 +27,7 @@ ul {
   padding: 10px;
 }
 
-li {
+nav li {
   padding: 10px;
   text-transform: uppercase;
 }

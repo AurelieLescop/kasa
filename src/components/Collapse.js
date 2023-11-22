@@ -29,9 +29,15 @@ function Collapse(props) {
       {/* {open && (
             <div className="toggle">{props.children}</div> */}
 
-            <div className="menu">
-            <h2>{props.label}</h2>
-      <p onClick={display} className="menu__scrolling">{open? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-up fa-rotate-180"></i>}</p>
+      <div className="menu">
+        <h2>{props.label}</h2>
+        <p onClick={display} className="menu__scrolling">
+          {open ? (
+            <i class="fa-solid fa-chevron-up"></i>
+          ) : (
+            <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+          )}
+        </p>
       </div>
       {open && <div className="description">{props.children}</div>}
     </div>

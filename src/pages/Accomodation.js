@@ -56,35 +56,37 @@ function Accomodation() {
     return (
       <div>
         <Header />
+        <main>
+          <Imageslider slides={datas.pictures} />
 
-        <Imageslider slides={datas.pictures} />
+          <div>
+            <h2>{datas.title}</h2>
+            <div>{datas.location}</div>
+            <div>{datastags}</div>
 
-        <div>
-          <h2>{datas.title}</h2>
-          <div>{datas.location}</div>
-          <div>{datastags}</div>
-
-          <div className="presentation">
-            <div className="ratingbar"><Ratingbar rating={datas.rating} /> {datas.rating} </div>
-            <div className="host__presentation">
-              <div className="host__name">{datas.host.name} </div>
-              <img
-                src={datas.host.picture}
-                className="host__picture"
-                alt="photographie de l'hôte"
-              />
+            <div className="presentation">
+              <div className="ratingbar">
+                <Ratingbar rating={datas.rating} />{" "}
+              </div>
+              <div className="host__presentation">
+                <div className="host__name">{datas.host.name} </div>
+                <img
+                  src={datas.host.picture}
+                  className="host__picture"
+                  alt="photographie de l'hôte"
+                />
+              </div>
             </div>
+
+            <Collapse label="Description" className="descriptiontag">
+              <p>{datas.description}</p>
+            </Collapse>
+
+            <Collapse label="Équipements">
+              <div className="equipment">{equipments}</div>
+            </Collapse>
           </div>
-
-          <Collapse label="Description" className="descriptiontag">
-            <p>{datas.description}</p>
-          </Collapse>
-
-          <Collapse label="Équipements">
-            <div className="equipment">{equipments}</div>
-          </Collapse>
-        </div>
-
+        </main>
         <Footer />
       </div>
     );
