@@ -17,7 +17,7 @@ const Ratingbar = ({ rating }) => {
     } else {
       star.push(
         
-          <i class="fa-regular fa-star"></i>
+          <i className="fa-solid fa-star greystar"></i>
        
       );
     }

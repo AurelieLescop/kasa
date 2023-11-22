@@ -31,6 +31,8 @@ function Accomodation() {
 
   console.log(datas);
 
+  // const name = datas.host.name;
+
   // if datas... return
   // else
   // success / loading / failure if else else
@@ -48,10 +50,12 @@ function Accomodation() {
     const datastags = (
       <div className="alltags">
         {datas.tags.map((tag) => (
-          <div className="tag">{tag}</div>
+          <div className="tag"><p>{tag}</p></div>
         ))}
       </div>
     );
+
+    
 
     return (
       <div>
@@ -61,7 +65,7 @@ function Accomodation() {
 
           <div>
             <h2>{datas.title}</h2>
-            <div>{datas.location}</div>
+            <h3>{datas.location}</h3>
             <div>{datastags}</div>
 
             <div className="presentation">
