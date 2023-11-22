@@ -6,6 +6,7 @@ function NotFound() {
   return (
     <div className="Notfound">
       <Header />
+      <main>
       <h1 className="Notfound__title">404</h1>
       <p className="Notfound__info">
         Oups! La page que vous demandez n'existe pas.
@@ -13,6 +14,7 @@ function NotFound() {
       <div className="Link">
         <NavLink to="/">Retourner sur la page d’accueil</NavLink>
       </div>
+      </main>
       <Footer />
     </div>
   );

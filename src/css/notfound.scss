@@ -1,8 +1,7 @@
 .Notfound {
-  text-align: center;
-  color: #ff6060;
-  font-weight: 500;
-  font-size: 18px;
+
+
+
 }
 
 .Notfound__title {
@@ -11,14 +10,21 @@
   font-size: 96px;
   margin: 0;
   padding-top : 180px;
+  text-align: center;
 }
 
 .Notfound__info {
   padding : 0 50px 150px 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .Link {
   margin-bottom: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
   a {
     font-size: 14px;
     font-weight: 500;
