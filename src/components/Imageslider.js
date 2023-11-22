@@ -18,7 +18,6 @@ const Imageslider = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
-  if (slides.length !== 1) {
     return (
       <div className="sliderpicture">
         {slides.length !== 1 && (
@@ -26,9 +25,11 @@ const Imageslider = ({ slides }) => {
             <i class="fa-solid fa-chevron-up fa-rotate-270"></i>
           </div>
         )}
+        {slides.length !== 1 && (
         <div className="goToNext" onClick={goToNext}>
           <i class="fa-solid fa-chevron-up fa-rotate-90"></i>
         </div>
+        )}
 
         <div className="picturenumber">
           {currentIndex + 1}/{slides.length}
@@ -36,16 +37,6 @@ const Imageslider = ({ slides }) => {
         <img src={pictures[currentIndex]} alt="appartement" />
       </div>
     );
-  } else {
-    return (
-      <div className="sliderpicture">
-        <img src={pictures[currentIndex]} alt="appartement" />
-        <div className="picturenumber">
-          {currentIndex + 1}/{slides.length}
-        </div>
-      </div>
-    );
-  }
 };
 
 export default Imageslider;
