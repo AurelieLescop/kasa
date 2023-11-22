@@ -2,13 +2,13 @@
   // height: 255px;
   /* width: 335px; */
 
-  border-radius: 20px;
+  // border-radius: 20px;
   /* margin: 20px; */
   position: relative;
   // z-index: 10;
   display: inline-block;
   /* margin: 20px auto 20px auto; */
-  margin : 10px 0;
+  margin : 20px;
 }
 
 .accomodation_card_gradient {
@@ -17,7 +17,7 @@
     rgba(255, 255, 255, 0) 0%,
     rgba(0, 0, 0, 0.5) 100%
   );
-  border-radius: 20px;
+  border-radius: 15px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -42,7 +42,7 @@
   height: 255px;
   /* position: absolute; */
   display: flex;
-  border-radius: 20px;
+  border-radius: 15px;
   /* position: absolute; */
   // position: relative;
   // z-index: -1;
@@ -52,3 +52,21 @@
 //     rgba(0, 0, 0, 0.5) 100%
 //   );
 }
+
+@media all and (min-width: 767px) {
+  .accomodation_picture {
+    height: 340px;
+    width: 340px;
+    max-width: none;
+  }
+  
+  }
+
+  @media all and (min-width: 991px) and (max-width: 1400px) {
+    .accomodation_picture {
+      height: 340px;
+      width: 340px;
+      max-width: none;
+    }
+    
+    }
