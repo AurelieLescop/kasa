@@ -15,7 +15,7 @@ import { useState } from "react";
 // export default Collapse;
 
 function Collapse(props) {
-  const [open, setOPen] = useState(true);
+  const [open, setOPen] = useState(false);
   // à changer selon si on veut ouvert ou non
 
   const display = () => {

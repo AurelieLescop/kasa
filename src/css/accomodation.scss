@@ -53,7 +53,7 @@
   clip-path: ellipse(50% 50%);
 }
 
-h2 {
+.location {
   font-weight: 500;
   font-size: 18px;
   margin: 0;
@@ -76,7 +76,7 @@ h3 {
 }
 
 @media all and (min-width: 767px) {
-  h2 {
+  .location {
     font-size: 36px;
   }
 }
@@ -99,6 +99,20 @@ h3 {
     // display: flex;
     // justify-content: center;
     margin: 0;
+}
+
+.accomodation__collapse {
+display: flex;
+justify-content: space-around;
+// flex: 1;
+}
+
+.collapse {
+  flex: 1;
+}
+
+.description p {
+height: 100%;
 }
 
 }
