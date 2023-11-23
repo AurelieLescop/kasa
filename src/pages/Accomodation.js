@@ -16,6 +16,8 @@ function Accomodation() {
   const [datas, setDatas] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  // const [firstName, lastName] = datas.host.name.split(" ");
+
   useEffect(() => {
     setIsLoading(true);
     fetch("../logements.json")
@@ -50,12 +52,12 @@ function Accomodation() {
     const datastags = (
       <div className="alltags">
         {datas.tags.map((tag) => (
-          <div className="tag"><p>{tag}</p></div>
+          <div className="tag">
+            <p>{tag}</p>
+          </div>
         ))}
       </div>
     );
-
-    
 
     return (
       <div>
@@ -63,13 +65,14 @@ function Accomodation() {
         <main>
           <Imageslider slides={datas.pictures} />
 
-          <div>
-            <h2>{datas.title}</h2>
-            <h3>{datas.location}</h3>
-            <div>{datastags}</div>
-
-            <div className="presentation">
-              <div className="ratingbar">
+          <div className="presentation">
+            <div className="location">
+              <h2>{datas.title}</h2>
+              <h3>{datas.location}</h3>
+              <div>{datastags}</div>
+            </div>
+            <div className="host">
+              <div className="host__ratingbar">
                 <Ratingbar rating={datas.rating} />{" "}
               </div>
               <div className="host__presentation">
@@ -81,15 +84,15 @@ function Accomodation() {
                 />
               </div>
             </div>
-
-            <Collapse label="Description" className="descriptiontag">
-              <p>{datas.description}</p>
-            </Collapse>
-
-            <Collapse label="Équipements">
-              <div className="equipment">{equipments}</div>
-            </Collapse>
           </div>
+
+          <Collapse label="Description" className="descriptiontag">
+            <p>{datas.description}</p>
+          </Collapse>
+
+          <Collapse label="Équipements">
+            <div className="equipment">{equipments}</div>
+          </Collapse>
         </main>
         <Footer />
       </div>

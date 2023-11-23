@@ -53,4 +53,14 @@ li a {
   nav li {
     text-transform: capitalize;
   }
+
+  li a {
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 991px) {
+  li a {
+    font-size: 24px;
+  }
 }

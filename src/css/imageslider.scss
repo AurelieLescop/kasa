@@ -13,11 +13,6 @@
   border-radius: 20px;
 }
 
-.picturenumber {
-display: none;
-
-}
-
 .goToPrevious {
   position: absolute;
   top: 45%;
@@ -37,15 +32,27 @@ display: none;
 
 .picturenumber {
   position: absolute;
-  right: 45%;
-  top: 80%;
-  color: black;
-  font-size: 30px;
+  display: none;
 }
 
-@media all and (min-width: 690px) {
+@media all and (min-width: 767px) {
   .picturenumber {
     display: block;
-    
+    color: white;
+    font-size: 20px;
+    right: 50%;
+  top: 85%;
     }
+
+    .sliderpicture {
+      height: 350px;
+
+}
+}
+
+@media all and (min-width: 991px) {
+  .sliderpicture {
+    height: 415px;
+
+}
 }

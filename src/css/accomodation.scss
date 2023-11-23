@@ -34,7 +34,7 @@
   padding: 0;
 }
 
-.presentation {
+.host {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
@@ -55,6 +55,8 @@
 
 h2 {
   font-weight: 500;
+  font-size: 18px;
+  margin: 0;
 }
 
 h3 {
@@ -63,7 +65,7 @@ h3 {
   margin: 0;
 }
 
-.ratingbar{
+.host__ratingbar{
     // display: flex;
     // justify-content: center;
     margin: auto 0;
@@ -71,4 +73,32 @@ h3 {
 
 .host__name {
     margin: auto 0;
+}
+
+@media all and (min-width: 767px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media all and (min-width: 991px) {
+  .presentation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .host {
+    // flex-direction: column-reverse;
+    flex-direction: column-reverse;
+
+    justify-content: space-around;
+  }
+
+  .host__ratingbar{
+    // display: flex;
+    // justify-content: center;
+    margin: 0;
+}
+
 }
