@@ -29,6 +29,9 @@
     // overflow: hidden;
     // transition: max-height 0.2s ease-out;
 
+    animation: apparition 2.0s linear;
+
+
 }
 
 .description {
@@ -49,8 +52,9 @@
 
 // position : relative;
 // top: 1;
-border-radius: -5px;
+border-radius: 5px;
 
+animation: apparition 2.0s linear;
 }
 
 .description div {
@@ -94,4 +98,16 @@ border-radius: -5px;
 .menu__scrolling {
     margin: 0;
     margin: auto 0;
+}
+
+@keyframes apparition {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: max-height;
+        height: 100%;
+    }
+
 }
