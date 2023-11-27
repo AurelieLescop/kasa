@@ -45,14 +45,14 @@ function Accomodation() {
     const equipments = (
       <ul>
         {datas.equipments.map((equipment) => (
-          <li>{equipment}</li>
+          <li key={datas.id}>{equipment}</li>
         ))}
       </ul>
     );
     const datastags = (
       <div className="alltags">
         {datas.tags.map((tag) => (
-          <div className="tag">
+          <div key={Math.random()} className="tag">
             <p>{tag}</p>
           </div>
         ))}

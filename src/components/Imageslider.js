@@ -22,12 +22,12 @@ const Imageslider = ({ slides }) => {
       <div className="sliderpicture">
         {slides.length !== 1 && (
           <div className="goToPrevious" onClick={goToPrevious}>
-            <i class="fa-solid fa-chevron-up fa-rotate-270"></i>
+            <i className="fa-solid fa-chevron-up fa-rotate-270"></i>
           </div>
         )}
         {slides.length !== 1 && (
         <div className="goToNext" onClick={goToNext}>
-          <i class="fa-solid fa-chevron-up fa-rotate-90"></i>
+          <i className="fa-solid fa-chevron-up fa-rotate-90"></i>
         </div>
         )}
 

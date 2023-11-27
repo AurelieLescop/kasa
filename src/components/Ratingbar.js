@@ -11,13 +11,13 @@ const Ratingbar = ({ rating }) => {
     if (i < currentRating) {
       star.push(
         
-          <i className="fa-solid fa-star"></i>
+          <i key={Math.random()} className="fa-solid fa-star"></i>
   
       );
     } else {
       star.push(
         
-          <i className="fa-solid fa-star greystar"></i>
+          <i key={Math.random()} className="fa-solid fa-star greystar"></i>
        
       );
     }
