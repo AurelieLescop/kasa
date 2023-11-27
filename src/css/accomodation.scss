@@ -103,16 +103,21 @@ h3 {
 
 .accomodation__collapse {
 display: flex;
-justify-content: space-around;
-// flex: 1;
+justify-content: space-between;
+flex: 2.1;
 }
 
 .collapse {
   flex: 1;
+  // margin-right: 10px;
 }
 
 .description p {
 height: 100%;
+}
+
+.spacer_10 {
+  width: 10px;
 }
 
 }

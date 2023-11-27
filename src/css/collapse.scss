@@ -48,13 +48,13 @@
 // transition: max-height 0.2s ease-out;
 
 // overflow: hidden;
-// transition: height 200ms;
+transition: height 200ms;
 
 // position : relative;
 // top: 1;
 border-radius: 5px;
 
-animation: apparition 2.0s linear;
+// animation: apparition 2.0s linear;
 }
 
 .description div {
@@ -66,9 +66,6 @@ animation: apparition 2.0s linear;
     /* position: absolute; */
 
 }
-
-
-
 
 .menu {
     /* border: 1px solid black; */

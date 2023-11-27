@@ -76,7 +76,9 @@ function Accomodation() {
                 <Ratingbar rating={datas.rating} />{" "}
               </div>
               <div className="host__presentation">
-                <div className="host__name">{datas.host.name} </div>
+                <pre className="host__name">
+                  {datas.host.name.replace(" ", "\n")}{" "}
+                </pre>
                 <img
                   src={datas.host.picture}
                   className="host__picture"
@@ -90,7 +92,7 @@ function Accomodation() {
             <Collapse label="Description">
               <p>{datas.description}</p>
             </Collapse>
-
+            <div className="spacer_10"></div>
             <Collapse label="Équipements">
               <div className="equipment">{equipments}</div>
             </Collapse>
