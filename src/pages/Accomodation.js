@@ -8,6 +8,7 @@ import Collapse from "../components/Collapse";
 // import Ratingbar from "../components/Ratingbar";
 import NotFound from "./NotFound";
 import Host from "../components/Host";
+import Tag from "../components/Tag";
 
 function Accomodation() {
   let params = useParams();
@@ -69,7 +70,8 @@ function Accomodation() {
             <div>
               <h2 className="location">{datas.title}</h2>
               <h3>{datas.location}</h3>
-              <div>{datastags}</div>
+
+              <Tag datastags={datastags} />
             </div>
 
             <Host datas={datas} />
