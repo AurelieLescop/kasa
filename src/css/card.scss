@@ -54,6 +54,13 @@
 //   );
 }
 
+@media all and (min-width: 650px) {
+
+  .accomodation_card {
+margin : 20px;
+  }
+}
+
 @media all and (min-width: 767px) {
   .accomodation_picture {
     height: 340px;
