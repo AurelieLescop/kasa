@@ -1,0 +1,44 @@
+.host__presentation {
+    display: flex;
+  }
+  
+  .host__name {
+    width: 93px;
+  }
+  
+  .host__picture {
+    width: 32px;
+    clip-path: ellipse(50% 50%);
+  }
+
+  .host {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  .host__ratingbar{
+    // display: flex;
+    // justify-content: center;
+    margin: auto 0;
+}
+
+.host__name {
+    margin: auto 0;
+}
+
+@media all and (min-width: 991px) {
+    .host {
+        // flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    
+        justify-content: space-around;
+      }
+    
+      .host__ratingbar{
+        // display: flex;
+        // justify-content: center;
+        margin: 0;
+    }
+
+}
