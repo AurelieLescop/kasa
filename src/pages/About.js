@@ -2,6 +2,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Collapse from "../components/Collapse";
 import picture from "../IMG_about.png";
+import coverpicture from "../IMG_about.png";
+
 import Banner from "../components/Banner";
 
 function About() {
@@ -9,7 +11,7 @@ function About() {
     <div className="about">
       <Header />
       <main>
-        <Banner ></Banner>
+        <Banner src={coverpicture} size={223}/>
         <img
           src={picture}
           className="picture_img"
