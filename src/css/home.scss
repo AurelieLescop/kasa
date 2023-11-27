@@ -1,7 +1,13 @@
 /* body {
     background-color: grey;
 } */
+.home .banner_img {
+    filter: brightness(0.65);
+  }
 
+  .home .banner {
+    height: 111px;
+}
 
 .accomodation_list {
     /* width: 100%; */
@@ -34,6 +40,16 @@
         /* padding: 20px 20px 20px 20px; */
     }
     
+
+    
+    .home .banner_img {
+        height: 223px;
+    }
+
+    .home .banner {
+        height: 223px;
+    }
+
   }
 
   @media all and (min-width: 991px) {

@@ -7,7 +7,7 @@
   /* position: absolute; */
   width: 100%;
   /* max-width: 1400px; */
-  height: 223px;
+//   height: 223px;
   object-fit: cover;
   /* margin: auto; */
   /* z-index: 0; */
@@ -15,12 +15,12 @@
   // filter: brightness(0.65);
 }
 
-.about h1 {
-  display: none;
-}
+// .about h1 {
+//   display: none;
+// }
 
-.about .picture_img {
-  filter: brightness(0.65);
+.about .banner {
+    height: 223px;
 }
 
 @media all and (min-width: 767px) {
