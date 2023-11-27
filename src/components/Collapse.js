@@ -33,9 +33,9 @@ function Collapse(props) {
         <h2>{props.label}</h2>
         <p onClick={display} className="menu__scrolling">
           {open ? (
-            <i className="fa-solid fa-chevron-up"></i>
+            <i className="fa-solid fa-chevron-up chevron"></i>
           ) : (
-            <i className="fa-solid fa-chevron-up fa-rotate-180"></i>
+            <i className="fa-solid fa-chevron-up fa-rotate-180 chevron_inverse"></i>
           )}
         </p>
       </div>
