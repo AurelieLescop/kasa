@@ -9,7 +9,7 @@ const Card = ({ data }) => {
         href={"http://localhost:3000/Accomodation/" + data.id}
         // a.setAttribute("href", `./product.html?id=${canape._id}`);
 
-        title="Plus de détails sur cet hébergement"
+        title={"Plus de détails sur " + data.title}
       >
         <div className="accomodation_card_gradient"></div>
         <img
