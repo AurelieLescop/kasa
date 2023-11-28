@@ -21,6 +21,7 @@
 
 .description p {
     font-size: 12px;
+    font-weight: 400;
     color: #FF6060;
     margin: 0;
     background-color: #F6F6F6;
@@ -80,15 +81,17 @@ animation: slide-in 0.5s ease-in-out;
     background-color: #FF6060;
     display: flex;
     justify-content: space-between;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
     /* position: absolute; */
     // position: relative;
     height: 30px;
 }
 
 .menu h2 {
-
-    margin: auto 0;
+align-items: center;
+margin: 0;
+display: flex;
+    // margin: auto 0;
 }
 
 // .collapse {
@@ -96,7 +99,7 @@ animation: slide-in 0.5s ease-in-out;
 // }
 
 .fa-chevron-up {
-    font-size: 20px;
+    font-size: 16px;
 
 }
 
@@ -106,7 +109,10 @@ animation: slide-in 0.5s ease-in-out;
 
 .menu__scrolling {
     margin: 0;
-    margin: auto 0;
+    // margin: auto 0;
+    margin: 0;
+    align-items: center;
+    display: flex;
 }
 
 // @keyframes apparition {
@@ -148,3 +154,36 @@ animation: slide-in 0.5s ease-in-out;
     }
 }
 
+@media all and (min-width: 767px) {
+.menu {
+    height: 38px;
+    padding: 0 20px;
+}
+
+.collapse h2 {
+    font-size: 18px;
+}
+
+.description p {
+    font-size: 18px;
+}
+
+.fa-chevron-up {
+    font-size: 24px;
+}
+}
+
+@media all and (min-width: 991px) {
+    .menu {
+        height: 47px;
+    }
+
+    .collapse h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .description p {
+        font-size: 24px;
+    }
+    }

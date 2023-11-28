@@ -56,6 +56,18 @@ li a {
   li a {
     font-size: 18px;
   }
+
+  //problème sur hauteru
+  .logo {
+    width: 210px;
+    height: 68 px;
+    padding-left: 40px;
+    object-fit: cover;
+  }
+
+  nav ul {
+    padding-right: 30px;
+  }
 }
 
 @media all and (min-width: 991px) {
