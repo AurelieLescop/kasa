@@ -18,25 +18,26 @@ const Imageslider = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
-    return (
-      <div className="sliderpicture">
-        {slides.length !== 1 && (
-          <div className="goToPrevious" onClick={goToPrevious}>
-            <i className="fa-solid fa-chevron-up fa-rotate-270 sliderpicture__chevron"></i>
-          </div>
-        )}
-        {slides.length !== 1 && (
+  return (
+    <div className="sliderpicture">
+      {slides.length !== 1 && (
+        <div className="goToPrevious" onClick={goToPrevious}>
+          <i className="fa-solid fa-chevron-up fa-rotate-270 sliderpicture__chevron"></i>
+        </div>
+      )}
+      {slides.length !== 1 && (
         <div className="goToNext" onClick={goToNext}>
           <i className="fa-solid fa-chevron-up fa-rotate-90 sliderpicture__chevron"></i>
         </div>
-        )}
-
+      )}
+      {slides.length !== 1 && (
         <div className="picturenumber">
           {currentIndex + 1}/{slides.length}
         </div>
-        <img src={pictures[currentIndex]} alt="appartement" />
-      </div>
-    );
+      )}
+      <img src={pictures[currentIndex]} alt="appartement" />
+    </div>
+  );
 };
 
 export default Imageslider;

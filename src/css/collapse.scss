@@ -16,6 +16,7 @@
 .collapse p {
     /* font-size: 13px; */
     color: #FFFFFF;
+
     /* font-weight: 500; */
 }
 
@@ -25,7 +26,7 @@
     color: #FF6060;
     margin: 0;
     background-color: #F6F6F6;
-    padding : 10px;
+    padding : 20px;
     /* position: absolute; */
     // overflow: hidden;
     // transition: height 2s;
@@ -70,7 +71,7 @@ animation: slide-in 0.5s ease-in-out;
     color: #FF6060;
     margin: 0;
     background-color: #F6F6F6;
-    padding : 10px;
+    padding : 20px;
     /* position: absolute; */
 
 }
@@ -113,6 +114,7 @@ display: flex;
     margin: 0;
     align-items: center;
     display: flex;
+    cursor: pointer;
 }
 
 // @keyframes apparition {
