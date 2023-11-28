@@ -19,7 +19,7 @@
 .location {
   font-weight: 500;
   font-size: 18px;
-  margin: 0;
+  margin : 20px 0 0 0;
 }
 
 h3 {
@@ -31,9 +31,23 @@ h3 {
 
 
 @media all and (min-width: 767px) {
+.menu {
+  height : 52px;
+}
+
+  .menu h2 {
+  font-size: 18px;
+}
+
   .location {
     font-size: 36px;
   }
+
+  h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+
 }
 
 @media all and (min-width: 991px) {
@@ -41,6 +55,14 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+  }
+
+  .description p {
+    font-size: 18px;
+  }
+
+  .equipment li {
+    font-size: 18px;
   }
 
   
@@ -61,7 +83,7 @@ flex: 2.1;
 // }
 
 .spacer_10 {
-  width: 10px;
+  width: 20px;
 }
 
 }
