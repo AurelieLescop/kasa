@@ -3,20 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
-  // width : 100%;
-  /*mettre une height */
 }
-
-/* revoir l'intérêt 
- nav {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding : 10px;
-} */
-
-/* li et ul ont 1 padding qui fait une marge / un espace à droite */
 
 nav ul {
   display: flex;
@@ -57,7 +44,6 @@ li a {
     font-size: 18px;
   }
 
-  //problème sur hauteru
   .logo {
     width: 210px;
     height: 68 px;

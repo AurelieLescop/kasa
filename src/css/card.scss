@@ -1,14 +1,7 @@
 .accomodation_card {
-  // height: 255px;
-  /* width: 335px; */
-
-  // border-radius: 20px;
-  /* margin: 20px; */
   position: relative;
-  // z-index: 10;
   display: inline-block;
-  /* margin: 20px auto 20px auto; */
-  margin : 10px 0;
+  margin: 10px 0;
 }
 
 .accomodation_card_gradient {
@@ -41,23 +34,13 @@
   max-width: 335px;
   width: 100%;
   height: 255px;
-  /* position: absolute; */
   display: flex;
   border-radius: 15px;
-  /* position: absolute; */
-  // position: relative;
-  // z-index: -1;
-//   background: linear-gradient(
-//     180deg,
-//     rgba(255, 255, 255, 0) 0%,
-//     rgba(0, 0, 0, 0.5) 100%
-//   );
 }
 
 @media all and (min-width: 650px) {
-
   .accomodation_card {
-margin : 20px;
+    margin: 20px;
   }
 }
 
@@ -67,14 +50,12 @@ margin : 20px;
     width: 340px;
     max-width: none;
   }
-  
-  }
+}
 
-  @media all and (min-width: 991px) {
-    .accomodation_picture {
-      height: 340px;
-      width: 340px;
-      max-width: none;
-    }
-    
-    }
+@media all and (min-width: 991px) {
+  .accomodation_picture {
+    height: 340px;
+    width: 340px;
+    max-width: none;
+  }
+}

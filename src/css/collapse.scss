@@ -1,191 +1,125 @@
 .collapse {
-    /* border: 1px solid blue; */
-    margin-bottom: 20px;
-    margin: 20px 0;
-
-    /* background-color: black; */
-    overflow: hidden;
+  margin-bottom: 20px;
+  margin: 20px 0;
+  overflow: hidden;
 }
 
 .collapse h2 {
-    font-size: 13px;
-    color: #FFFFFF;
-    font-weight: 500;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
 }
 
 .collapse p {
-    /* font-size: 13px; */
-    color: #FFFFFF;
-
-    /* font-weight: 500; */
+  color: #ffffff;
 }
 
 .description p {
-    font-size: 12px;
-    font-weight: 400;
-    color: #FF6060;
-    margin: 0;
-    background-color: #F6F6F6;
-    padding : 20px;
-    /* position: absolute; */
-    // overflow: hidden;
-    // transition: height 2s;
-
-    // overflow: hidden;
-    // transition: max-height 0.2s ease-out;
-
-    animation: apparition 2.0s linear;
-
-
+  font-size: 12px;
+  font-weight: 400;
+  color: #ff6060;
+  margin: 0;
+  background-color: #f6f6f6;
+  padding: 20px;
+  animation: apparition 2s linear;
 }
 
 .description {
-//     z-index: -1;
-//     transition: transform 5s ease-in-out;
-//     &.hidden {
-//       transform: translateY(-100%);
-//     }
-//     &.visible {
-//       transform: translateY(0);
-//     }
-
-// overflow: hidden;
-// transition: max-height 0.2s ease-out;
-
-// overflow: hidden;
-transition: height 200ms;
-
-// position : relative;
-// top: 1;
-border-radius: 5px;
-position: relative;
-top: -0.3rem;
-z-index: -1;
-animation: slide-in 0.5s ease-in-out;
-
-// animation: apparition 2.0s linear;
+  transition: height 200ms;
+  border-radius: 5px;
+  position: relative;
+  top: -0.3rem;
+  z-index: -1;
+  animation: slide-in 0.5s ease-in-out;
 }
 
 .description div {
-    font-size: 12px;
-    color: #FF6060;
-    margin: 0;
-    background-color: #F6F6F6;
-    padding : 20px;
-    /* position: absolute; */
-
+  font-size: 12px;
+  color: #ff6060;
+  margin: 0;
+  background-color: #f6f6f6;
+  padding: 20px;
 }
 
 .menu {
-    /* border: 1px solid black; */
-    border-radius: 5px;
-    background-color: #FF6060;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    /* position: absolute; */
-    // position: relative;
-    height: 30px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 30px;
 }
 
 .menu h2 {
-align-items: center;
-margin: 0;
-display: flex;
-    // margin: auto 0;
+  align-items: center;
+  margin: 0;
+  display: flex;
 }
 
-// .collapse {
-//     margin: 30px;
-// }
-
 .fa-chevron-up {
-    font-size: 16px;
-
+  font-size: 16px;
 }
 
 .chevron {
-    animation: rotation 0.5s ease-in;
+  animation: rotation 0.5s ease-in;
 }
 
 .menu__scrolling {
-    margin: 0;
-    // margin: auto 0;
-    margin: 0;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
+  margin: 0;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
 }
 
-// @keyframes apparition {
-//     from {
-//         height: 0;
-//     }
-
-//     to {
-//         height: max-height;
-//         height: 100%;
-//     }
-
-// } ne fonctionne pas
-
-// @keyframes slide-in {
-//     from {
-//         transform: translateY(-100%);
-//     }
-
-// } autre façon de faire
-
 @keyframes slide-in {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes rotation {
-    from {
-        transform: rotate(180deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 @media all and (min-width: 767px) {
-.menu {
+  .menu {
     height: 38px;
     padding: 0 20px;
-}
+  }
 
-.collapse h2 {
+  .collapse h2 {
     font-size: 18px;
-}
+  }
 
-.description p {
+  .description p {
     font-size: 18px;
-}
+  }
 
-.fa-chevron-up {
+  .fa-chevron-up {
     font-size: 24px;
-}
+  }
 }
 
 @media all and (min-width: 991px) {
-    .menu {
-        height: 47px;
-    }
+  .menu {
+    height: 47px;
+  }
 
-    .collapse h2 {
-        font-size: 24px;
-        font-weight: 500;
-    }
+  .collapse h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
 
-    .description p {
-        font-size: 24px;
-    }
-    }
+  .description p {
+    font-size: 24px;
+  }
+}

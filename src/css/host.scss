@@ -1,59 +1,48 @@
 .host__presentation {
-    display: flex;
-  }
-  
-  .host__name {
-    width: 93px;
-    font-family: Montserrat;
-display: flex;
-align-items: center;
-justify-content: flex-end;
-margin: 0 10px 0 0;
-  }
-  
-  .host__picture {
-    width: 32px;
-    clip-path: ellipse(50% 50%);
-  }
+  display: flex;
+}
 
+.host__name {
+  width: 93px;
+  font-family: Montserrat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 10px 0 0;
+}
+
+.host__picture {
+  width: 32px;
+  clip-path: ellipse(50% 50%);
+}
+
+.host {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.host__ratingbar {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+@media all and (min-width: 991px) {
   .host {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
+    flex-direction: column-reverse;
+    justify-content: space-around;
   }
 
   .host__ratingbar {
-    // display: flex;
-    // justify-content: center;
-    // margin: auto 0;
-
     margin: 0;
-display: flex;
-    align-items: center;
-}
+  }
 
+  .host__name {
+    font-size: 18px;
+  }
 
-
-@media all and (min-width: 991px) {
-    .host {
-        // flex-direction: column-reverse;
-        flex-direction: column-reverse;
-    
-        justify-content: space-around;
-      }
-    
-      .host__ratingbar{
-        // display: flex;
-        // justify-content: center;
-        margin: 0;
-    }
-
-    .host__name {
-        font-size: 18px;
-    }
-
-    .host__picture {
-        width: 48px;
-      }
-
+  .host__picture {
+    width: 48px;
+  }
 }

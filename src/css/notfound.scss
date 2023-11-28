@@ -1,17 +1,14 @@
-// .Notfound {
-// }
-
 .Notfound__title {
   color: #ff6060;
   font-weight: 700;
   font-size: 96px;
   margin: 0;
-  padding-top : 180px;
+  padding-top: 180px;
   text-align: center;
 }
 
 .Notfound__info {
-  padding : 0 50px 150px 50px;
+  padding: 0 50px 150px 50px;
   text-align: center;
   font-weight: 500;
   font-size: 18px;
@@ -25,14 +22,13 @@
   a {
     font-size: 14px;
     font-weight: 500;
-    color: #FF6060;
+    color: #ff6060;
   }
 }
 
 @media all and (min-width: 767px) {
   .Notfound__title {
-
-  font-size: 150px;
+    font-size: 150px;
   }
 
   .Notfound__info {
@@ -46,8 +42,7 @@
 
 @media all and (min-width: 991px) {
   .Notfound__title {
-
-  font-size: 288px;
+    font-size: 288px;
   }
 
   .Notfound__info {

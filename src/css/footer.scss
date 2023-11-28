@@ -1,31 +1,26 @@
 footer {
-    background-color : black;
-    color: white;
-    text-align: center;
-    padding : 50px 0 50px 0;
-    font-size : 12px;
-    font-weight: 500;
-    margin-top: 10px;
-
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0 50px 0;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 .logo {
-width: 122px;
-height: 40px;
+  width: 122px;
+  height: 40px;
 }
 
 @media all and (min-width: 767px) {
-
-    footer {
-        font-size : 18px;
-    }
-
+  footer {
+    font-size: 18px;
+  }
 }
 
 @media all and (min-width: 991px) {
-
-    footer {
-        font-size : 24px;
-    }
-
+  footer {
+    font-size: 24px;
+  }
 }
