@@ -10,7 +10,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 // import Header from "./components/Header";
 
-function App() {
+function Router() {
   return (
       <Routes>
         <Route path="/" element={<Home />} />
@@ -38,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Router;
