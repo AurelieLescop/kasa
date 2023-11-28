@@ -1,10 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-//import Accomodationgrid from "../components/Accomodationgrid";
 import Card from "../components/Card";
 import { useState, useEffect } from "react";
 import Banner from "../components/Banner";
-// import "../css/home.scss";
 import coverpicture from "../IMG_cover.png";
 
 function Home() {
@@ -12,12 +10,7 @@ function Home() {
   useEffect(() => {
     fetch("logements.json")
       .then((response) => response.json())
-      //   .then((datas) => console.log(datas));
-      //   .then((res) => console.log(res));
       .then((data) => setDatas(data));
-    //.catch((error) =>)
-
-    // .catch((error)) => console.error(error)); à remettre non ?
   }, []);
   return (
     <div className="home">

@@ -1,11 +1,9 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
-
 import { useEffect, useState } from "react";
 import Imageslider from "../components/Imageslider";
 import Collapse from "../components/Collapse";
-// import Ratingbar from "../components/Ratingbar";
 import NotFound from "./NotFound";
 import Host from "../components/Host";
 import Tag from "../components/Tag";
@@ -16,8 +14,6 @@ function Accomodation() {
 
   const [datas, setDatas] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-
-  // const [firstName, lastName] = datas.host.name.split(" ");
 
   useEffect(() => {
     setIsLoading(true);
@@ -31,14 +27,6 @@ function Accomodation() {
         setIsLoading(false);
       });
   }, [params.id]);
-
-  console.log(datas);
-
-  // const name = datas.host.name;
-
-  // if datas... return
-  // else
-  // success / loading / failure if else else
 
   if (isLoading) {
     return <p>Loading...</p>;
