@@ -34,7 +34,7 @@ function Accomodation() {
     const equipments = (
       <ul>
         {datas.equipments.map((equipment) => (
-          <li key={datas.id}>{equipment}</li>
+          <li key={Math.random()}>{equipment}</li>
         ))}
       </ul>
     );
@@ -71,7 +71,7 @@ function Accomodation() {
             </Collapse>
             <div className="spacer_10"></div>
             <Collapse label="Équipements">
-              <p className="equipment">{equipments}</p>
+              <div className="equipment">{equipments}</div>
             </Collapse>
           </section>
         </main>

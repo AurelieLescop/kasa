@@ -37,6 +37,16 @@
         padding: 15px 10px;
         animation: apparition 2s linear;
       }
+
+      .equipment {
+        font-size: 12px;
+        font-weight: 400;
+        color: #ff6060;
+        margin: 0;
+        background-color: #f6f6f6;
+        padding: 15px 10px;
+        animation: apparition 2s linear;
+      }
     }
 
     &__scrolling {
@@ -90,7 +100,13 @@
     &__menu {
       height: 38px;
       padding: 0 20px;
-      &__description p {
+      &__description {
+        p {
+          font-size: 18px;
+          padding: 20px 15px;
+        }
+      }
+      .equipment {
         font-size: 18px;
         padding: 20px 15px;
       }

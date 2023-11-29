@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Collapse from "../components/Collapse";
-import picture from "../assets/IMG_about.png"
+import picture from "../assets/IMG_about.png";
 
 import Banner from "../components/Banner";
 

@@ -20,7 +20,7 @@ function Home() {
           <div className="bannertitle">
             <h1>
               Chez vous, <br className="break" />
-              partout et ailleurs{" "}
+              partout et ailleurs
             </h1>
           </div>
         </Banner>
