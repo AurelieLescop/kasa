@@ -28,10 +28,23 @@
   align-items: center;
 }
 
+@media all and (min-width: 767px) {
+    .host__presentation__name {
+      font-size: 18px;
+    }
+  
+    .host__presentation__picture {
+      width: 48px;
+    }
+  }
+  
+
+
 @media all and (min-width: 991px) {
   .host {
     flex-direction: column-reverse;
     justify-content: space-around;
+    min-width: 153px;
   }
 
   .host__ratingbar {
