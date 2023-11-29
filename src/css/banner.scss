@@ -1,12 +1,12 @@
 .banner {
   margin: 10px 0;
   position: relative;
-}
 
-.banner__img {
-  border-radius: 15px;
-  width: 100%;
-  object-fit: cover;
+  &__img {
+    border-radius: 15px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 @media all and (min-width: 767px) {

@@ -1,13 +1,14 @@
-.equipment ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.equipment li {
-  padding: 0;
+.equipment {
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 0;
+  }
 }
 
 .location {
@@ -25,10 +26,9 @@ h3 {
 @media all and (min-width: 767px) {
   .collapse__menu {
     height: 52px;
-  }
-
-  .collapse__menu h2 {
-    font-size: 18px;
+    h2 {
+      font-size: 18px;
+    }
   }
 
   .location {
@@ -48,10 +48,6 @@ h3 {
     margin-top: 20px;
   }
 
-  .collapse__menu__description p {
-    font-size: 18px;
-  }
-
   .equipment li {
     font-size: 18px;
   }
@@ -64,6 +60,10 @@ h3 {
 
   .collapse {
     flex: 1;
+
+    &__menu__description p {
+      font-size: 18px;
+    }
   }
 
   .spacer_10 {
