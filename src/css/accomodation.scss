@@ -56,14 +56,14 @@ h3 {
     display: flex;
     justify-content: space-between;
     flex: 2.1;
+
+    p {
+      font-size: 18px;
+    }
   }
 
   .collapse {
     flex: 1;
-
-    &__menu__description p {
-      font-size: 18px;
-    }
   }
 
   .spacer_10 {

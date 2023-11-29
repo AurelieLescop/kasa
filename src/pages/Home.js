@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Card from "../components/Card";
 import { useState, useEffect } from "react";
 import Banner from "../components/Banner";
-import coverpicture from "../IMG_cover.png";
+import coverpicture from "../assets/IMG_cover.png";
 
 function Home() {
   const [datas, setDatas] = useState([]);

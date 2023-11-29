@@ -1,4 +1,4 @@
-import logofooter from '../LOGO_footer.png';
+import logofooter from '../assets/LOGO_footer.png';
 
 function Footer() {
     return (

@@ -4,8 +4,6 @@ import { useState } from "react";
 const Imageslider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [pictures] = useState(slides);
-  console.log(slides);
-  console.log(pictures);
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
