@@ -3,9 +3,6 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    //   <div>
-    //     <h1>partie Header</h1>
-    //   </div>
     <div>
       <header>
         <img src={logo} className="logo" alt="logo du site Kasa" />
