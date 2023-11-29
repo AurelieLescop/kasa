@@ -8,10 +8,10 @@ function Host({ datas }) {
         <Ratingbar rating={datas.rating} />{" "}
       </div>
       <div className="host__presentation">
-        <pre className="host__name">{datas.host.name.replace(" ", "\n")} </pre>
+        <pre className="host__presentation__name">{datas.host.name.replace(" ", "\n")} </pre>
         <img
           src={datas.host.picture}
-          className="host__picture"
+          className="host__presentation__picture"
           alt="photographie de l'hôte"
         />
       </div>

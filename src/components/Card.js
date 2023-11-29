@@ -2,16 +2,16 @@ import React from "react";
 
 const Card = ({ data }) => {
   return (
-    <article className="accomodation_card">
+    <article className="card">
       <a
         href={"http://localhost:3000/Accomodation/" + data.id}
         title={"Plus de détails sur " + data.title}
       >
-        <div className="accomodation_card_gradient"></div>
+        <div className="card__gradient"></div>
         <img
-          className="accomodation_picture"
+          className="card__picture"
           src={data.cover}
-          alt={"Photo " + data.title}
+          alt={"Photographie de " + data.title}
         />
         <h2>{data.title}</h2>
       </a>

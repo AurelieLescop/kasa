@@ -1,15 +1,15 @@
-.accomodation_card {
+.card {
   position: relative;
   display: inline-block;
   margin: 10px 0;
   border-radius: 15px;
 }
 
-.accomodation_card_gradient:hover {
+.card__gradient:hover {
   box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.accomodation_card_gradient {
+.card__gradient {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -23,7 +23,7 @@
   left: 0;
 }
 
-.accomodation_card h2 {
+.card h2 {
   color: white;
   font-size: 18px;
   width: 200px;
@@ -34,7 +34,7 @@
   font-weight: 500;
 }
 
-.accomodation_picture {
+.card__picture {
   object-fit: cover;
   max-width: 335px;
   width: 100%;
@@ -44,13 +44,13 @@
 }
 
 @media all and (min-width: 650px) {
-  .accomodation_card {
+  .card {
     margin: 20px;
   }
 }
 
 @media all and (min-width: 767px) {
-  .accomodation_picture {
+  .card__picture {
     height: 340px;
     width: 340px;
     max-width: none;
@@ -58,7 +58,7 @@
 }
 
 @media all and (min-width: 991px) {
-  .accomodation_picture {
+  .card__picture {
     height: 340px;
     width: 340px;
     max-width: none;

@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.host__name {
+.host__presentation__name {
   width: 93px;
   font-family: Montserrat;
   display: flex;
@@ -11,7 +11,7 @@
   margin: 0 10px 0 0;
 }
 
-.host__picture {
+.host__presentation__picture {
   width: 32px;
   clip-path: ellipse(50% 50%);
 }
@@ -38,11 +38,11 @@
     margin: 0;
   }
 
-  .host__name {
+  .host__presentation__name {
     font-size: 18px;
   }
 
-  .host__picture {
+  .host__presentation__picture {
     width: 48px;
   }
 }

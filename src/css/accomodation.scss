@@ -23,11 +23,11 @@ h3 {
 }
 
 @media all and (min-width: 767px) {
-  .menu {
+  .collapse__menu {
     height: 52px;
   }
 
-  .menu h2 {
+  .collapse__menu h2 {
     font-size: 18px;
   }
 
@@ -48,7 +48,7 @@ h3 {
     margin-top: 20px;
   }
 
-  .description p {
+  .collapse__menu__description p {
     font-size: 18px;
   }
 

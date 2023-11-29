@@ -17,7 +17,7 @@ function Home() {
       <Header />
       <main>
         <Banner src={coverpicture} size={111}>
-          <div className="h1title">
+          <div className="bannertitle">
             <h1>
               Chez vous, <br className="break" />
               partout et ailleurs{" "}
@@ -25,7 +25,7 @@ function Home() {
           </div>
         </Banner>
         <div className="accomodation">
-          <div className="accomodation_list">
+          <div className="accomodation__list">
             {datas.map((data) => (
               <Card key={data.id} data={data} />
             ))}

@@ -4,7 +4,7 @@ function Banner({ src, size, children }) {
       {children}
       <img
         src={src}
-        className="banner_img"
+        className="banner__img"
         alt="photographie de paysage"
         height={size}
       />
