@@ -12,7 +12,7 @@ function About() {
       <main>
         <Banner src={picture} size={223} />
 
-        <div className="about__collapse">
+        <section className="about__collapse">
           <article>
             <Collapse label="Fiabilité">
               <p>
@@ -54,7 +54,7 @@ function About() {
               </p>
             </Collapse>
           </article>
-        </div>
+        </section>
       </main>
       <Footer />
     </div>

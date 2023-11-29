@@ -3,7 +3,7 @@ import Ratingbar from "../components/Ratingbar";
 
 function Host({ datas }) {
   return (
-    <div className="host">
+    <section className="host">
       <div className="host__ratingbar">
         <Ratingbar rating={datas.rating} />{" "}
       </div>
@@ -15,7 +15,7 @@ function Host({ datas }) {
           alt="photographie de l'hôte"
         />
       </div>
-    </div>
+    </section>
   );
 }
 

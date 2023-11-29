@@ -54,7 +54,7 @@ function Accomodation() {
         <main>
           <Imageslider slides={datas.pictures} />
 
-          <div className="presentation">
+          <section className="presentation">
             <div>
               <h2 className="location">{datas.title}</h2>
               <h3>{datas.location}</h3>
@@ -63,17 +63,17 @@ function Accomodation() {
             </div>
 
             <Host datas={datas} />
-          </div>
+          </section>
 
-          <div className="accomodation__collapse">
+          <section className="accomodation__collapse">
             <Collapse label="Description">
               <p>{datas.description}</p>
             </Collapse>
             <div className="spacer_10"></div>
             <Collapse label="Équipements">
-              <div className="equipment">{equipments}</div>
+              <p className="equipment">{equipments}</p>
             </Collapse>
-          </div>
+          </section>
         </main>
         <Footer />
       </div>

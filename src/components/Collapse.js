@@ -10,7 +10,7 @@ function Collapse(props) {
   };
 
   return (
-    <div className="collapse">
+    <article className="collapse">
       <div className="collapse__menu">
         <h2>{props.label}</h2>
         <p onClick={display} className="collapse__menu__scrolling">
@@ -22,7 +22,7 @@ function Collapse(props) {
         </p>
       </div>
       {open && <div className="collapse__menu__description">{props.children}</div>}
-    </div>
+    </article>
   );
 }
 export default Collapse;

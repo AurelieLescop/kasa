@@ -24,13 +24,13 @@ function Home() {
             </h1>
           </div>
         </Banner>
-        <div className="accomodation">
-          <div className="accomodation__list">
+        <section className="accomodation">
+          <section className="accomodation__list">
             {datas.map((data) => (
               <Card key={data.id} data={data} />
             ))}
-          </div>
-        </div>
+          </section>
+        </section>
       </main>
       <Footer />
     </div>
