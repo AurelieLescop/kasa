@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useRef } from "react";
 
 function Collapse(props) {
   const [open, setOPen] = useState(false);
@@ -8,6 +9,10 @@ function Collapse(props) {
   const display = () => {
     setOPen(!open);
   };
+  // {open && <div className="collapse__menu__description">{props.children}</div>}
+
+  const contentRef = useRef();
+  if (contentRef.current) console.log(contentRef.current.scrollHeight);
 
   return (
     <article className="collapse">
@@ -21,7 +26,15 @@ function Collapse(props) {
           )}
         </p>
       </div>
-      {open && <div className="collapse__menu__description">{props.children}</div>}
+
+      <div className="content-parent"
+  ref={contentRef} style={open ? { height: contentRef.current.scrollHeight +
+  "px" } : { height: "0px" }}>
+<div className="content">{props.children}</div>
+</div>
+      
+
+
     </article>
   );
 }

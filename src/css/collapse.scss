@@ -1,84 +1,108 @@
 .collapse {
-  margin-bottom: 20px;
-  margin: 20px 0;
-  overflow: hidden;
-
-  h2 {
-    font-size: 13px;
-    color: #ffffff;
-    font-weight: 500;
-  }
-
-  p {
-    color: #ffffff;
-  }
-
-  &__menu {
-    border-radius: 5px;
-    background-color: #ff6060;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    height: 30px;
-
-    &__description {
-      transition: height 200ms;
-      border-radius: 5px;
-      position: relative;
-      top: -0.3rem;
-      z-index: -1;
-      animation: slide-in 0.5s ease-in-out ;
-    //   animation: slide-out 0.5s ease-in-out;
-}
-
-      p {
-        font-size: 12px;
-        font-weight: 400;
-        color: #ff6060;
-        margin: 0;
-        background-color: #f6f6f6;
-        padding: 15px 10px;
-    //   animation: slide-out 0.5s ease-in-out;
-        
-      }
-
-      .equipment {
-        font-size: 12px;
-        font-weight: 400;
-        color: #ff6060;
-        margin: 0;
-        background-color: #f6f6f6;
-        padding: 15px 10px;
-      }
-    }
-
-    &__scrolling {
-      margin: 0;
-      margin: 0;
-      align-items: center;
-      display: flex;
-      cursor: pointer;
-    }
-
+    margin-bottom: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+  
     h2 {
-      align-items: center;
-      margin: 0;
+      font-size: 13px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+  
+    p {
+      color: #ffffff;
+    }
+  
+    &__menu {
+      border-radius: 5px;
+      background-color: #ff6060;
       display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      height: 30px;
+  
+      &__description {
+        // transition: height 200ms;
+        border-radius: 5px;
+        position: relative;
+        top: -0.3rem;
+        z-index: -1;
+        // animation: slide-in 0.5s ease-in-out;
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          color: #ff6060;
+          margin: 0;
+          background-color: #f6f6f6;
+          padding: 15px 10px;
+        //   animation: apparition 2s linear;
+        }
+  
+        .equipment {
+          font-size: 12px;
+          font-weight: 400;
+          color: #ff6060;
+          margin: 0;
+          background-color: #f6f6f6;
+          padding: 15px 10px;
+        //   animation: apparition 2s linear;
+        }
+      }
+  
+      &__scrolling {
+        margin: 0;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+      }
+  
+      h2 {
+        align-items: center;
+        margin: 0;
+        display: flex;
+      }
     }
   }
-
-
-.fa-chevron-up {
-  font-size: 16px;
-}
-
-.chevron {
-  animation: rotation 0.5s ease-in;
-}
-
-.chevron__inverse {
-    animation: reverserotation 0.5s ease-in;
+  
+  .fa-chevron-up {
+    font-size: 16px;
   }
+  
+//   .chevron {
+//     animation: rotation 0.5s ease-in;
+//   }
+
+// .chevron__inverse {
+//     animation: reverserotation 0.5s ease-in;
+//   }
+
+//   essai 
+.content {
+    border: 1px solid rgb(128, 123, 123);
+    padding: 0.5rem;
+    border-radius: 5px;
+
+    position: relative;
+    top: -0.3rem;
+    z-index: -1;
+
+    p{
+    color: black;
+    }
+}
+    
+.content-parent {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.9s;
+}
+    
+.content-show {
+    height: 200px;
+}
+//fin essai animation collapse
+
 
 @keyframes slide-in {
   from {
