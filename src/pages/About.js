@@ -5,12 +5,14 @@ import picture from "../assets/IMG_about.png";
 
 import Banner from "../components/Banner";
 
+const aboutbannerheight = 223;
+
 function About() {
   return (
     <div className="about">
       <Header />
       <main>
-        <Banner src={picture} size={223} />
+        <Banner src={picture} height={aboutbannerheight} />
 
         <section className="about__collapse">
           <article>

@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import Banner from "../components/Banner";
 import coverpicture from "../assets/IMG_cover.png";
 
+const homebannerheight = 111;
+
 function Home() {
   const [datas, setDatas] = useState([]);
   useEffect(() => {
@@ -16,7 +18,7 @@ function Home() {
     <div className="home">
       <Header />
       <main>
-        <Banner src={coverpicture} size={111}>
+        <Banner src={coverpicture} height={homebannerheight}>
           <div className="bannertitle">
             <h1>
               Chez vous, <br className="break" />

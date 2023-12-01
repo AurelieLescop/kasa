@@ -1,4 +1,4 @@
-function Banner({ src, size, children }) {
+function Banner({ src, height, children }) {
   return (
     <div className="banner">
       {children}
@@ -6,7 +6,7 @@ function Banner({ src, size, children }) {
         src={src}
         className="banner__img"
         alt="photographie de paysage"
-        height={size}
+        height={height}
       />
     </div>
   );
