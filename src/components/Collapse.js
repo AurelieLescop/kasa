@@ -28,7 +28,7 @@ function Collapse(props) {
       </div>
 
       <div
-        className="collapse__descrption"
+        className="collapse__description"
         ref={contentRef}
         style={
           open

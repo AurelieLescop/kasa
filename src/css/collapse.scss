@@ -28,6 +28,9 @@
         top: -0.3rem;
         z-index: -1;
         // animation: slide-in 0.5s ease-in-out;
+
+
+
         p {
           font-size: 12px;
           font-weight: 400;
@@ -69,30 +72,15 @@
     font-size: 16px;
   }
   
-//   .chevron {
-//     animation: rotation 0.5s ease-in;
-//   }
+  .chevron {
+    animation: rotation 0.5s ease-in;
+  }
 
-// .chevron__inverse {
-//     animation: reverserotation 0.5s ease-in;
-//   }
-
-//   essai 
-// .content {
-//     border: 1px solid rgb(128, 123, 123);
-//     padding: 0.5rem;
-//     border-radius: 5px;
-
-//     position: relative;
-//     top: -0.3rem;
-//     z-index: -1;
-
-//     p{
-//     color: black;
-//     }
-// }
+.chevron__inverse {
+    animation: reverserotation 0.5s ease-in;
+  }
     
-.collapse__descrption {
+.collapse__description {
     height: 0px;
     overflow: hidden;
     transition: height ease 0.9s;
