@@ -12,12 +12,10 @@
 @import "./host.scss";
 @import "./tag.scss";
 
-body {
-    height: 100%;
-}
 
 main {
   padding: 0 20px;
+  flex-grow: 1;
 }
 
 body {
@@ -28,6 +26,12 @@ body {
   color: #ff6060;
   max-width: 1400px;
   margin: auto;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 @media all and (min-width: 767px) {

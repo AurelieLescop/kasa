@@ -1,3 +1,9 @@
+.Notfound {
+  display: flex;
+    flex-direction: column;  
+    min-height: 100vh;
+  }
+
 .Notfound__title {
   color: #ff6060;
   font-weight: 700;

@@ -49,7 +49,7 @@ function Accomodation() {
     );
 
     return (
-      <div>
+      <div className="accomodation">
         <Header />
         <main>
           <Imageslider slides={datas.pictures} />
