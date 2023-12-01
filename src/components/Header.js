@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <div>
       <header>
         <img src={logo} className="logo" alt="logo du site Kasa" />
 
@@ -32,7 +31,6 @@ function Header() {
           </ul>
         </nav>
       </header>
-    </div>
   );
 }
 
