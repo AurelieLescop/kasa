@@ -1,7 +1,7 @@
 .collapse {
     margin-bottom: 20px;
     margin: 20px 0;
-    overflow: hidden;
+    // overflow: hidden;
   
     h2 {
       font-size: 13px;
@@ -20,12 +20,13 @@
       justify-content: space-between;
       padding: 0 10px;
       height: 30px;
+      z-index:1;
   
       &__description {
         // transition: height 200ms;
         border-radius: 5px;
         position: relative;
-        top: -0.3rem;
+        // top: -0.3rem;
         z-index: -1;
         // animation: slide-in 0.5s ease-in-out;
 
@@ -84,28 +85,9 @@
     height: 0px;
     overflow: hidden;
     transition: height ease 0.9s;
+    top: -0.3rem;
+    position: relative;
 }
-
-//fin essai animation collapse
-
-
-@keyframes slide-in {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-out {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-100%);
-    }
-  }
 
 @keyframes rotation {
   from {
