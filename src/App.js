@@ -2,12 +2,12 @@ import { Routes, Route } from "react-router-dom";
 
 //import logo from './logo.svg'; => penser à supprimer ce logo dans dossier
 // import "./css/app.css";
-import "./css/app.scss";
+import "./style/app.scss";
 
-import Home from "./pages/Home";
-import Accomodation from "./pages/Accomodation";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
+import Home from "./pages/Home/Home";
+import Accomodation from "./pages/Accomodation/Accomodation";
+import About from "./pages/About/About";
+import NotFound from "./pages/Notfound/NotFound";
 // import Header from "./components/Header";
 
 function App() {

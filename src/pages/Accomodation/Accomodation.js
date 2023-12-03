@@ -1,12 +1,12 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Imageslider from "../components/Imageslider";
-import Collapse from "../components/Collapse";
-import NotFound from "./NotFound";
-import Host from "../components/Host";
-import Tag from "../components/Tag";
+import Imageslider from "../../components/Imageslider/Imageslider";
+import Collapse from "../../components/Collapse/Collapse";
+import NotFound from "../Notfound/NotFound";
+import Host from "../../components/Host/Host";
+import Tag from "../../components/Tag/Tag";
 
 function Accomodation() {
   let params = useParams();

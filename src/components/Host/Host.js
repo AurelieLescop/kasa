@@ -1,5 +1,5 @@
 import React from "react";
-import Ratingbar from "../components/Ratingbar";
+import Ratingbar from "../Ratingbar/Ratingbar";
 
 function Host({ datas }) {
   return (

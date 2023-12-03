@@ -1,9 +1,9 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Card from "../components/Card";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import Card from "../../components/Card/Card";
 import { useState, useEffect } from "react";
-import Banner from "../components/Banner";
-import coverpicture from "../assets/IMG_cover.png";
+import Banner from "../../components/Banner/Banner";
+import coverpicture from "../../assets/IMG_cover.png";
 
 const homebannerheight = 111;
 

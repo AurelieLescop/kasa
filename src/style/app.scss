@@ -1,0 +1,41 @@
+@import "../pages/Home/home.scss";
+@import "../pages/Home/home.scss";
+@import "../components/Footer/footer.scss";
+@import "../pages/Notfound/notfound.scss";
+@import "../components/Card/card.scss";
+@import "../components/Banner/banner.scss";
+@import "../pages/About/about.scss";
+@import "../components/Card/card.scss";
+@import "../components/Imageslider/imageslider.scss";
+@import "../pages/Accomodation/accomodation.scss";
+@import "../components/Ratingbar/ratingbar.scss";
+@import "../components/Host/host.scss";
+@import "../components/Tag/tag.scss";
+
+
+main {
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
+  color: #ff6060;
+  max-width: 1400px;
+  margin: auto;
+}
+
+// #root {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+// }
+
+@media all and (min-width: 767px) {
+  main {
+    padding: 0 40px;
+  }
+}
