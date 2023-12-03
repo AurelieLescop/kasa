@@ -56,8 +56,8 @@ function Accomodation() {
 
           <section className="presentation">
             <div>
-              <h2 className="location">{datas.title}</h2>
-              <h3>{datas.location}</h3>
+              <h1 className="location">{datas.title}</h1>
+              <h2>{datas.location}</h2>
 
               <Tag datastags={datastags} />
             </div>

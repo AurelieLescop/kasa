@@ -2,6 +2,12 @@
   display: flex;
     flex-direction: column;  
     min-height: 100vh;
+
+    h2 {
+      font-weight: 500;
+      font-size: 14px;
+      margin: 0;
+    }
   }
 
 .equipment {
@@ -23,11 +29,7 @@
   margin: 20px 0 0 0;
 }
 
-h3 {
-  font-weight: 500;
-  font-size: 14px;
-  margin: 0;
-}
+
 
 @media all and (min-width: 767px) {
   .collapse__menu {
@@ -41,7 +43,7 @@ h3 {
     font-size: 36px;
   }
 
-  h3 {
+  .accomodation h2 {
     font-size: 18px;
     margin: 0;
   }
