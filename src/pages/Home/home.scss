@@ -50,11 +50,27 @@
   .home .banner {
     height: 223px;
   }
+
+  .break {
+    display: none;
+  }
+
+  .banner h1 {
+    position: relative;
+    top: 30%;
+    // left: 15%;
+    // line-height: normal;
+    // text-align: center;
+    font-size: 36px;
+    padding: 0;
+  }
 }
 
 @media all and (min-width: 991px) {
-  .accomodation__list {
-    background-color: #f6f6f6;
-    border-radius: 20px;
+  .banner h1 {
+    top: 22%;
+    // left: 25%;
+    font-size: 48px;
+    padding: 0;
   }
 }

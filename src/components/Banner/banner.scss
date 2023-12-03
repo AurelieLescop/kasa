@@ -8,28 +8,3 @@
     object-fit: cover;
   }
 }
-
-@media all and (min-width: 767px) {
-  .break {
-    display: none;
-  }
-
-  .banner h1 {
-    position: relative;
-    top: 22%;
-    // left: 15%;
-    // line-height: normal;
-    // text-align: center;
-    font-size: 36px;
-    padding: 0;
-  }
-}
-
-@media all and (min-width: 991px) {
-  .banner h1 {
-    // top: 22%;
-    // left: 25%;
-    font-size: 48px;
-    padding: 0;
-  }
-}
