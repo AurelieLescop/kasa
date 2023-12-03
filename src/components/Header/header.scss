@@ -30,7 +30,7 @@ li a {
   border-bottom: 1px solid #ff6060;
 }
 
-.logo {
+.logo_header {
   width: 145px;
   height: 47 px;
   padding-left: 20px;
@@ -42,7 +42,7 @@ li a {
       text-transform: capitalize;
     }
     ul {
-      padding-right: 30px;
+      padding-right: 50px;
     }
   }
 
@@ -50,10 +50,10 @@ li a {
     font-size: 18px;
   }
 
-  .logo {
+  .logo_header {
     width: 210px;
     height: 68 px;
-    padding-left: 40px;
+    padding: 20px 0 0 60px;
     object-fit: cover;
   }
 }
