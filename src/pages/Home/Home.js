@@ -1,5 +1,3 @@
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import Card from "../../components/Card/Card";
 import { useState, useEffect } from "react";
 import Banner from "../../components/Banner/Banner";
@@ -15,9 +13,7 @@ function Home() {
       .then((data) => setDatas(data));
   }, []);
   return (
-    <div className="home">
-      <Header />
-      <main>
+      <main className="home">
         <Banner src={coverpicture} height={homebannerheight}>
           <div className="bannertitle">
             <h1>
@@ -34,8 +30,6 @@ function Home() {
           </section>
         </section>
       </main>
-      <Footer />
-    </div>
   );
 }
 

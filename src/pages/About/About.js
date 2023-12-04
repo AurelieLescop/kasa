@@ -1,5 +1,3 @@
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import Collapse from "../../components/Collapse/Collapse";
 import picture from "../../assets/IMG_about.png";
 import Banner from "../../components/Banner/Banner";
@@ -8,9 +6,7 @@ const aboutbannerheight = 223;
 
 function About() {
   return (
-    <div className="about">
-      <Header />
-      <main>
+      <main className="about">
         <Banner src={picture} height={aboutbannerheight} />
 
         <section className="about__collapse">
@@ -57,8 +53,6 @@ function About() {
           </article>
         </section>
       </main>
-      <Footer />
-    </div>
   );
 }
 

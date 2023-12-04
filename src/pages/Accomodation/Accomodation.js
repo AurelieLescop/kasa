@@ -1,5 +1,3 @@
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Imageslider from "../../components/Imageslider/Imageslider";
@@ -49,9 +47,7 @@ function Accomodation() {
     );
 
     return (
-      <div className="accomodation">
-        <Header />
-        <main>
+        <main className="accomodation">
           <Imageslider slides={datas.pictures} />
 
           <section className="presentation">
@@ -75,8 +71,6 @@ function Accomodation() {
             </Collapse>
           </section>
         </main>
-        <Footer />
-      </div>
     );
   } else {
     return <NotFound />;

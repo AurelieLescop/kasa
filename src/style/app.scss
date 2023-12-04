@@ -18,6 +18,12 @@ main {
   flex-grow: 1;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;  
+  min-height: 100vh;
+}
+
 body {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
