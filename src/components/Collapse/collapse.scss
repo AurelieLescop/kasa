@@ -71,6 +71,10 @@
   
   .fa-chevron-up {
     font-size: 16px;
+
+    &:hover {
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+  }
   }
   
   .chevron {

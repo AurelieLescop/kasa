@@ -2,7 +2,6 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Collapse from "../../components/Collapse/Collapse";
 import picture from "../../assets/IMG_about.png";
-
 import Banner from "../../components/Banner/Banner";
 
 const aboutbannerheight = 223;

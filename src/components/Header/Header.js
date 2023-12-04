@@ -5,8 +5,12 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
       <header>
+        <a
+        href="http://localhost:3000/"
+        title="Retour vers la page d'accueil"
+      >
         <img src={logo} className="logo_header" alt="logo du site Kasa" />
-
+        </a>
         <nav>
           <ul>
             <li>
