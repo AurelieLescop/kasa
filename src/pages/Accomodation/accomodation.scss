@@ -1,11 +1,10 @@
 .accomodation {
-
-    h2 {
-      font-weight: 500;
-      font-size: 14px;
-      margin: 0;
-    }
+  h2 {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
   }
+}
 
 .equipment {
   ul {
@@ -26,8 +25,6 @@
   margin: 20px 0 0 0;
 }
 
-
-
 @media all and (min-width: 767px) {
   .collapse__menu {
     height: 52px;
@@ -46,10 +43,10 @@
   }
 
   .accomodation__list {
-      background-color: #f6f6f6;
-      border-radius: 20px;
-      padding: 20px;
-    }
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    padding: 20px;
+  }
 }
 
 @media all and (min-width: 991px) {

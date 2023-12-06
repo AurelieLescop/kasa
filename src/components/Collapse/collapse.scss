@@ -1,96 +1,88 @@
 .collapse {
-    margin-bottom: 20px;
-    margin: 20px 0;
-    // overflow: hidden;
-  
-    h2 {
-      font-size: 13px;
-      color: #ffffff;
-      font-weight: 500;
-    }
-  
-    p {
-      color: #ffffff;
-    }
-  
-    &__menu {
+  margin-bottom: 20px;
+  margin: 20px 0;
+
+  h2 {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  &__menu {
+    border-radius: 5px;
+    background-color: #ff6060;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 30px;
+    z-index: 1;
+
+    &__description {
       border-radius: 5px;
-      background-color: #ff6060;
+      position: relative;
+      z-index: -1;
+
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #ff6060;
+        margin: 0;
+        background-color: #f6f6f6;
+        padding: 15px 10px;
+      }
+
+      .equipment {
+        font-size: 12px;
+        font-weight: 400;
+        color: #ff6060;
+        margin: 0;
+        background-color: #f6f6f6;
+        padding: 15px 10px;
+      }
+    }
+
+    &__scrolling {
+      margin: 0;
+      margin: 0;
+      align-items: center;
       display: flex;
-      justify-content: space-between;
-      padding: 0 10px;
-      height: 30px;
-      z-index:1;
-  
-      &__description {
-        // transition: height 200ms;
-        border-radius: 5px;
-        position: relative;
-        // top: -0.3rem;
-        z-index: -1;
-        // animation: slide-in 0.5s ease-in-out;
+      cursor: pointer;
+    }
 
-
-
-        p {
-          font-size: 12px;
-          font-weight: 400;
-          color: #ff6060;
-          margin: 0;
-          background-color: #f6f6f6;
-          padding: 15px 10px;
-        //   animation: apparition 2s linear;
-        }
-  
-        .equipment {
-          font-size: 12px;
-          font-weight: 400;
-          color: #ff6060;
-          margin: 0;
-          background-color: #f6f6f6;
-          padding: 15px 10px;
-        //   animation: apparition 2s linear;
-        }
-      }
-  
-      &__scrolling {
-        margin: 0;
-        margin: 0;
-        align-items: center;
-        display: flex;
-        cursor: pointer;
-      }
-  
-      h2 {
-        align-items: center;
-        margin: 0;
-        display: flex;
-      }
+    h2 {
+      align-items: center;
+      margin: 0;
+      display: flex;
     }
   }
-  
-  .fa-chevron-up {
-    font-size: 16px;
+}
 
-    &:hover {
+.fa-chevron-up {
+  font-size: 16px;
+
+  &:hover {
     text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
   }
-  }
-  
-  .chevron {
-    animation: rotation 0.5s ease-in;
-  }
+}
+
+.chevron {
+  animation: rotation 0.5s ease-in;
+}
 
 .chevron__inverse {
-    animation: reverserotation 0.5s ease-in;
-  }
-    
+  animation: reverserotation 0.5s ease-in;
+}
+
 .collapse__description {
-    height: 0px;
-    overflow: hidden;
-    transition: height ease 0.9s;
-    top: -0.3rem;
-    position: relative;
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.9s;
+  top: -0.3rem;
+  position: relative;
 }
 
 @keyframes rotation {
@@ -103,13 +95,13 @@
 }
 
 @keyframes reverserotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(180deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(180deg);
+  }
+}
 
 @media all and (min-width: 767px) {
   .collapse {
@@ -130,7 +122,6 @@
           padding: 20px 15px;
         }
       }
-     
     }
   }
 
