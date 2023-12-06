@@ -1,5 +1,8 @@
 import React from "react";
 
+/**Fonction qui prend en paramètres l'appartement data
+ * Le lien a renvoit vers l'adresse spécifique à cet appartemen (page Accomodation)
+ */
 const Card = ({ data }) => {
   return (
     <article className="card">

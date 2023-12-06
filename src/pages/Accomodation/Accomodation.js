@@ -7,8 +7,8 @@ import Host from "../../components/Host/Host";
 import Tag from "../../components/Tag/Tag";
 
 function Accomodation() {
+  /**Récupération de l'adresse */
   let params = useParams();
-  console.log("params.id", params.id);
 
   const [datas, setDatas] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -18,8 +18,8 @@ function Accomodation() {
     fetch("../logements.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setDatas(
+          /**Filtre sur le tableau de données pour récupéré les données liées à l'appartement */
           data.filter((accomodation) => accomodation.id === params.id)[0]
         );
         setIsLoading(false);
@@ -47,30 +47,27 @@ function Accomodation() {
     );
 
     return (
-        <main className="accomodation">
-          <Imageslider slides={datas.pictures} />
+      <main className="accomodation">
+        <Imageslider slides={datas.pictures} />
+        <section className="presentation">
+          <div>
+            <h1 className="location">{datas.title}</h1>
+            <h2>{datas.location}</h2>
+            <Tag datastags={datastags} />
+          </div>
+          <Host datas={datas} />
+        </section>
 
-          <section className="presentation">
-            <div>
-              <h1 className="location">{datas.title}</h1>
-              <h2>{datas.location}</h2>
-
-              <Tag datastags={datastags} />
-            </div>
-
-            <Host datas={datas} />
-          </section>
-
-          <section className="accomodation__collapse">
-            <Collapse label="Description">
-              <p>{datas.description}</p>
-            </Collapse>
-            <div className="spacer_10"></div>
-            <Collapse label="Équipements">
-              <div className="equipment">{equipments}</div>
-            </Collapse>
-          </section>
-        </main>
+        <section className="accomodation__collapse">
+          <Collapse label="Description">
+            <p>{datas.description}</p>
+          </Collapse>
+          <div className="spacer_10"></div>
+          <Collapse label="Équipements">
+            <div className="equipment">{equipments}</div>
+          </Collapse>
+        </section>
+      </main>
     );
   } else {
     return <NotFound />;

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Banner from "../../components/Banner/Banner";
 import coverpicture from "../../assets/IMG_cover.png";
 
+/**Définition de la hauteur de l'image du composant Banner */
 const homebannerheight = 111;
 
 function Home() {
@@ -13,23 +14,23 @@ function Home() {
       .then((data) => setDatas(data));
   }, []);
   return (
-      <main className="home">
-        <Banner src={coverpicture} height={homebannerheight}>
-          <div className="bannertitle">
-            <h1>
-              Chez vous, <br className="break" />
-              partout et ailleurs
-            </h1>
-          </div>
-        </Banner>
-        <section className="accomodation">
-          <section className="accomodation__list">
-            {datas.map((data) => (
-              <Card key={data.id} data={data} />
-            ))}
-          </section>
+    <main className="home">
+      <Banner src={coverpicture} height={homebannerheight}>
+        <div className="bannertitle">
+          <h1>
+            Chez vous, <br className="break" />
+            partout et ailleurs
+          </h1>
+        </div>
+      </Banner>
+      <section className="accomodation">
+        <section className="accomodation__list">
+          {datas.map((data) => (
+            <Card key={data.id} data={data} />
+          ))}
         </section>
-      </main>
+      </section>
+    </main>
   );
 }
 

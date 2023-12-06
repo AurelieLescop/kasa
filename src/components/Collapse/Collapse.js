@@ -3,16 +3,15 @@ import { useState } from "react";
 import { useRef } from "react";
 
 function Collapse(props) {
+  /**Définition d'un état "open"
+  /* La collapse est fermée par défaut*/
   const [open, setOPen] = useState(false);
-  // à changer selon si on veut ouvert ou non
 
   const display = () => {
     setOPen(!open);
   };
-  // {open && <div className="collapse__menu__description">{props.children}</div>}
 
   const contentRef = useRef();
-  // if (contentRef.current) console.log(contentRef.current.scrollHeight);
 
   return (
     <article className="collapse">

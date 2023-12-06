@@ -1,3 +1,4 @@
+/**Fonction qui prend en paramètres les props source de l'image, sa hauteur et un text éventuel */
 function Banner({ src, height, children }) {
   return (
     <div className="banner">
