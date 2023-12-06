@@ -5,13 +5,14 @@ import Collapse from "../../components/Collapse/Collapse";
 import NotFound from "../Notfound/NotFound";
 import Host from "../../components/Host/Host";
 import Tag from "../../components/Tag/Tag";
+// import { useNavigate } from "react-router-dom";
 
 function Accomodation() {
   /**Récupération de l'adresse */
   let params = useParams();
 
   const [datas, setDatas] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setIsLoading(true);
@@ -19,11 +20,12 @@ function Accomodation() {
       .then((response) => response.json())
       .then((data) => {
         setDatas(
-          /**Filtre sur le tableau de données pour récupéré les données liées à l'appartement */
+          /**Filtre sur le tableau de données pour récupérer les données liées à l'appartement */
           data.filter((accomodation) => accomodation.id === params.id)[0]
         );
-        setIsLoading(false);
-      });
+      })
+      .catch((e) => console.error(e))
+      .finally(() => setIsLoading(false));
   }, [params.id]);
 
   if (isLoading) {
@@ -71,6 +73,11 @@ function Accomodation() {
     );
   } else {
     return <NotFound />;
+
   }
 }
 export default Accomodation;
+
+// return(
+//   useNavigate("../Notfound/NotFound");
+// )

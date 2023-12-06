@@ -7,6 +7,7 @@ function Collapse(props) {
   /* La collapse est fermée par défaut*/
   const [open, setOPen] = useState(false);
 
+  /**Définition du comportement lors du clic*/
   const display = () => {
     setOPen(!open);
   };
