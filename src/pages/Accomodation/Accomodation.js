@@ -5,7 +5,6 @@ import Collapse from "../../components/Collapse/Collapse";
 import NotFound from "../Notfound/NotFound";
 import Host from "../../components/Host/Host";
 import Tag from "../../components/Tag/Tag";
-// import { useNavigate } from "react-router-dom";
 
 function Accomodation() {
   /**Récupération de l'adresse */
@@ -73,11 +72,6 @@ function Accomodation() {
     );
   } else {
     return <NotFound />;
-
   }
 }
 export default Accomodation;
-
-// return(
-//   useNavigate("../Notfound/NotFound");
-// )
