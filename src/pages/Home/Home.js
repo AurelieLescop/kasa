@@ -11,8 +11,10 @@ function Home() {
   useEffect(() => {
     fetch("logements.json")
       .then((response) => response.json())
-      .then((data) => setDatas(data));
+      .then((data) => setDatas(data))
+      .catch((e) => console.error(e));
   }, []);
+
   return (
     <main className="home">
       <Banner src={coverpicture} height={homebannerheight}>
