@@ -17,7 +17,7 @@ function Host({ datas }) {
         <img
           src={datas.host.picture}
           className="host__presentation__picture"
-          alt="photographie de l'hôte"
+          alt={"photographie de l'hôte " + datas.host.name}
         />
       </div>
     </section>
