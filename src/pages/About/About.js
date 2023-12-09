@@ -1,3 +1,4 @@
+import React from "react";
 import Collapse from "../../components/Collapse/Collapse";
 import picture from "../../assets/IMG_about.png";
 import Banner from "../../components/Banner/Banner";
